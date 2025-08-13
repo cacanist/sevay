@@ -88,11 +88,9 @@ export default function ContactPage() {
                   <div>
                     <h3 className="text-lg font-semibold text-gray-800 mb-1">Çalışma Saatleri</h3>
                     <p className="text-gray-600">
-                      Pazartesi - Cuma: 09:00 - 18:00
+                      Pazartesi - Cumartesi: 09:00 - 21:00
                       <br />
-                      Cumartesi: 09:00 - 16:00
-                      <br />
-                      Pazar: Kapalı
+                      Pazar: 11:00 - 21:00
                     </p>
                   </div>
                 </div>
@@ -112,7 +110,7 @@ export default function ContactPage() {
                     <Instagram className="text-primary-500" size={24} />
                   </a>
                   <a
-                    href="https://youtube.com/@sevay-tv"
+                    href="https://www.youtube.com/@sevaykisiselgelisim"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-primary-100 p-3 rounded-full hover:bg-primary-200 transition-colors"

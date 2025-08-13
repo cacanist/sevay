@@ -11,13 +11,13 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "SEV-AY Eğitim ve Kariyer Danışmanlık Merkezi",
   description:
-    "Çocukların akademik, sosyal, fiziksel ve bilişsel gelişimlerini destekleyen eğitim programları ve koçluk hizmetleri. Antalya Muratpaşa'da hizmet vermekteyiz.",
+    "Çocukların akademik, sosyal, fiziksel ve bilişsel gelişimlerini destekleyen atölye programları ve koçluk hizmetleri. Antalya Muratpaşa'da hizmet vermekteyiz.",
   keywords: "eğitim, koçluk, çocuk gelişimi, kariyer danışmanlığı, atölye, seminer, Antalya, Muratpaşa",
   authors: [{ name: "SEV-AY Eğitim ve Kariyer Danışmanlık Merkezi" }],
   openGraph: {
     title: "SEV-AY Eğitim ve Kariyer Danışmanlık Merkezi",
     description:
-      "Çocukların akademik, sosyal, fiziksel ve bilişsel gelişimlerini destekleyen eğitim programları ve koçluk hizmetleri.",
+      "Çocukların akademik, sosyal, fiziksel ve bilişsel gelişimlerini destekleyen atölye programları ve koçluk hizmetleri.",
     url: "https://sevay-egitim.com",
     siteName: "SEV-AY Eğitim",
     locale: "tr_TR",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "SEV-AY Eğitim ve Kariyer Danışmanlık Merkezi",
     description:
-      "Çocukların akademik, sosyal, fiziksel ve bilişsel gelişimlerini destekleyen eğitim programları ve koçluk hizmetleri.",
+      "Çocukların akademik, sosyal, fiziksel ve bilişsel gelişimlerini destekleyen atölye programları ve koçluk hizmetleri.",
   },
   robots: {
     index: true,

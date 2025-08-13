@@ -32,11 +32,7 @@ export default function Footer() {
                   Eğitimler
                 </Link>
               </li>
-              <li>
-                <Link href="/blog" className="text-gray-300 hover:text-honey-300 transition-colors">
-                  Blog
-                </Link>
-              </li>
+              
               <li>
                 <Link href="/iletisim" className="text-gray-300 hover:text-honey-300 transition-colors">
                   İletişim
@@ -69,7 +65,7 @@ export default function Footer() {
                   <Instagram size={20} />
                 </a>
                 <a
-                  href="https://youtube.com/@sevay-tv"
+                  href="https://www.youtube.com/@sevaykisiselgelisim"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-300 hover:text-honey-300 transition-colors"

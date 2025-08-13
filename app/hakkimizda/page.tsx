@@ -51,9 +51,7 @@ export default function AboutPage() {
                 </h2>
               </div>
               <p className="text-gray-600 leading-relaxed text-lg">
-                Çocukların akademik, sosyal, fiziksel ve bilişsel gelişimlerini desteklemek ve çalışan ebeveynlere
-                kaliteli, güvenilir bir destek sistemi sunmak. Her çocuğun potansiyelini keşfetmesine yardımcı olmak ve
-                aileler için huzurlu bir ortam yaratmak.
+                Çalışan ebeveynler ve çocuğuna verimli vakit ayıramayan ebeveynler için çocukların akademik, sosyal, fiziksel ve bilişsel gelişimlerini desteklemek ve kaliteli, güvenilir bir destek sistemi sunmak. Her çocuğun potansiyelini keşfetmesine yardımcı olmak ve aileler için huzurlu bir ortam yaratmak.
               </p>
             </div>
 
@@ -167,8 +165,7 @@ export default function AboutPage() {
               <h2 className="text-4xl font-bold text-gray-800 mb-8">Kurucumuz Sevtap Aydın</h2>
               <div className="space-y-6 text-gray-600 text-lg leading-relaxed">
                 <p>
-                  SEV-AY Eğitim ve Kariyer Danışmanlık Merkezi'nin kurucusu Sevtap Aydın, çocuk gelişimi ve eğitim
-                  alanında uzun yıllara dayanan deneyime sahiptir.
+                  Ailelerin çocuklarının gerçek potansiyellerini keşfetmeleri, yoğun iş temposu ve hayat meşgaleleri içerisinde çocuklarına verimli vakit ayırabilme zorluklarını fark eden Sevtap Aydın, çocuk gelişimi ve eğitim alanında uzun yıllara dayanan deneyime sahiptir.
                 </p>
                 <p>
                   Çalışan ebeveynlerin yaşadığı zorlukları yakından gözlemleyen Sevtap Hanım, çocukların kaliteli zaman
@@ -227,9 +224,9 @@ export default function AboutPage() {
                   <h3 className="text-2xl font-bold mb-4 text-gray-800 group-hover:text-purple-600 transition-colors duration-300">
                     Oyun Temelli Öğrenme
                   </h3>
-                  <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 leading-relaxed">
                     Eğlenceli ve öğretici atölyeler, sanat ve bilim etkinlikleri ile çocuklar hem öğreniyor hem de
-                    keyifli vakit geçiriyor. 14 farklı atölye programımızla çeşitlilik sunuyoruz.
+                    keyifli vakit geçiriyor. 18 farklı atölye programımızla çeşitlilik sunuyoruz.
                   </p>
                 </div>
               </div>

@@ -5,10 +5,10 @@ import { Users, Heart, BookOpen, Award, ArrowRight } from "lucide-react"
 export const metadata: Metadata = {
   title: "SEV-AY Eğitim ve Kariyer Danışmanlık Merkezi | Ana Sayfa",
   description:
-    "Çocukların akademik, sosyal, fiziksel ve bilişsel gelişimlerini destekleyen eğitim programları. Çalışan ebeveynler için özel destek programları.",
+    "Çocukların akademik, sosyal, fiziksel ve bilişsel gelişimlerini destekleyen atölye programları. Çalışan ebeveynler için özel destek programları.",
   openGraph: {
     title: "SEV-AY Eğitim ve Kariyer Danışmanlık Merkezi",
-    description: "Çocukların akademik, sosyal, fiziksel ve bilişsel gelişimlerini destekleyen eğitim programları.",
+    description: "Çocukların akademik, sosyal, fiziksel ve bilişsel gelişimlerini destekleyen atölye programları.",
   },
 }
 
@@ -59,7 +59,7 @@ export default function HomePage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[calc(100vh-4rem)] flex items-center justify-center overflow-hidden">
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -82,7 +82,7 @@ export default function HomePage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/egitimler" className="btn-accent">
-              Eğitim Programlarımız
+              Atölye Programlarımız
               <ArrowRight className="ml-2 inline" size={20} />
             </Link>
             <Link
@@ -195,7 +195,7 @@ export default function HomePage() {
                 <BookOpen className="text-primary-500" size={32} />
               </div>
               <h3 className="text-xl font-semibold mb-2">Eğitici Atölyeler</h3>
-              <p className="text-gray-600">14 farklı atölye programı ile çocukların yeteneklerini keşfediyoruz.</p>
+              <p className="text-gray-600">18 farklı atölye programı ile çocukların yeteneklerini keşfediyoruz.</p>
             </div>
 
             <div className="card text-center">
@@ -278,7 +278,7 @@ export default function HomePage() {
           </div>
 
           <div className="bg-gradient-to-r from-primary-500 to-honey-300 rounded-2xl p-8 text-white text-center">
-            <h3 className="text-2xl font-bold mb-4">Programımızın Amacı</h3>
+            <h3 className="text-2xl font-bold mb-4">SEV-AY'ın Amacı</h3>
             <p className="text-lg mb-6 opacity-90">
               Okul saatleri dışında çocuklarınızın kaliteli zaman geçirmesi için SEV-AY'da gelişim içerikli oyun
               atölyeleri. Programımız, özellikle çalışan ebeveynlere yönelik olarak çocukların akademik, sosyal,

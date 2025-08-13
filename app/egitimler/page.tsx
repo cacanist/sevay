@@ -1,161 +1,30 @@
 import type { Metadata } from "next"
 import Link from "next/link"
+import { workshops as workshopDetails } from "@/lib/workshops"
 import { BookOpen, Users, Award, Clock, CheckCircle } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Eğitim Programları | SEV-AY Eğitim ve Kariyer Danışmanlık Merkezi",
+  title: "Atölye Programları | SEV-AY Eğitim ve Kariyer Danışmanlık Merkezi",
   description:
-    "14 farklı atölye programı, koçluk hizmetleri ve seminerler. Çocukların gelişimini destekleyen kapsamlı eğitim programları.",
+    "18 farklı atölye programı, koçluk hizmetleri ve seminerler. Çocukların gelişimini destekleyen kapsamlı atölye programları.",
   openGraph: {
-    title: "Eğitim Programları | SEV-AY Eğitim ve Kariyer Danışmanlık Merkezi",
+    title: "Atölye Programları | SEV-AY Eğitim ve Kariyer Danışmanlık Merkezi",
     description:
-      "14 farklı atölye programı, koçluk hizmetleri ve seminerler. Çocukların gelişimini destekleyen kapsamlı eğitim programları.",
+      "18 farklı atölye programı, koçluk hizmetleri ve seminerler. Çocukların gelişimini destekleyen kapsamlı atölye programları.",
   },
 }
 
 export default function EducationPage() {
-  const workshops = [
-    {
-      id: 1,
-      title: "Temel İngilizce İçerikli Oyun Atölyesi",
-      description: "Oyun temelli öğrenme ile İngilizce kelime dağarcığını geliştiren eğlenceli atölye",
-      image: "/english-learning-children.png",
-      category: "Dil Eğitimi",
-      ageGroup: "6-12 yaş",
-      duration: "45 dakika",
-      slug: "temel-ingilizce-oyun-atolyesi",
-    },
-    {
-      id: 2,
-      title: "Satranç Oyun Atölyesi",
-      description: "Stratejik düşünme ve problem çözme becerilerini geliştiren satranç eğitimi",
-      image: "/classroom-chess-game.png",
-      category: "Strateji Oyunları",
-      ageGroup: "7-14 yaş",
-      duration: "60 dakika",
-      slug: "satranc-oyun-atolyesi",
-    },
-    {
-      id: 3,
-      title: "Lego & Zeka Akıl Oyunları Atölyesi",
-      description: "Yaratıcılık ve mühendislik becilerini geliştiren yapı oyunları",
-      image: "/children-building-and-puzzles.png",
-      category: "Yaratıcılık",
-      ageGroup: "5-12 yaş",
-      duration: "50 dakika",
-      slug: "lego-zeka-oyunlari-atolyesi",
-    },
-    {
-      id: 4,
-      title: "Dans ve Hareket İçerikli Oyun Atölyesi",
-      description: "Fiziksel gelişim ve koordinasyonu destekleyen dans aktiviteleri",
-      image: "/colorful-dance-studio.png",
-      category: "Fiziksel Gelişim",
-      ageGroup: "4-10 yaş",
-      duration: "45 dakika",
-      slug: "dans-hareket-oyun-atolyesi",
-    },
-    {
-      id: 5,
-      title: "Aerobik ve Hareket İçerikli Oyun Atölyesi",
-      description: "Enerji dolu aktivitelerle fiziksel kondisyonu artıran program",
-      image: "/children-sports-activities.png",
-      category: "Fiziksel Gelişim",
-      ageGroup: "6-12 yaş",
-      duration: "40 dakika",
-      slug: "aerobik-hareket-oyun-atolyesi",
-    },
-    {
-      id: 6,
-      title: "Ödev Yapmaya Teşvik ve Motivasyon Atölyesi",
-      description: "Ödev yapma alışkanlığı kazandıran motivasyon teknikleri",
-      image: "/homework-motivation-kids.png",
-      category: "Eğitim Desteği",
-      ageGroup: "7-14 yaş",
-      duration: "45 dakika",
-      slug: "odev-motivasyon-atolyesi",
-    },
-    {
-      id: 7,
-      title: "Zaman Yönetimi ve Planlı Ders Çalışma Atölyesi",
-      description: "Öğrenci koçu ile etkili çalışma teknikleri ve zaman yönetimi",
-      image: "/study-planning-kids.png",
-      category: "Öğrenci Koçluğu",
-      ageGroup: "8-16 yaş",
-      duration: "60 dakika",
-      slug: "zaman-yonetimi-ders-calisma-atolyesi",
-    },
-    {
-      id: 8,
-      title: "Temel Resim Boyama İçerikli Oyun Atölyesi",
-      description: "Sanatsal yaratıcılığı geliştiren resim ve boyama teknikleri",
-      image: "/colorful-children-art.png",
-      category: "Sanat",
-      ageGroup: "4-12 yaş",
-      duration: "50 dakika",
-      slug: "temel-resim-boyama-atolyesi",
-    },
-    {
-      id: 9,
-      title: "Sokak Oyunları Atölyesi",
-      description: "Geleneksel oyunlarla sosyal etkileşim ve fiziksel aktivite",
-      image: "/traditional-street-games.png",
-      category: "Sosyal Gelişim",
-      ageGroup: "5-12 yaş",
-      duration: "45 dakika",
-      slug: "sokak-oyunlari-atolyesi",
-    },
-    {
-      id: 10,
-      title: "Yaratıcı Drama",
-      description: "Kendini ifade etme ve özgüven geliştirme drama aktiviteleri",
-      image: "/children-creative-drama.png",
-      category: "Sanat",
-      ageGroup: "6-14 yaş",
-      duration: "55 dakika",
-      slug: "yaratici-drama-atolyesi",
-    },
-    {
-      id: 11,
-      title: "Kitap Okuma Alışkanlığı Atölyesi",
-      description: "Okuma sevgisi kazandıran interaktif kitap okuma saatleri",
-      image: "/children-reading-books.png",
-      category: "Eğitim",
-      ageGroup: "5-12 yaş",
-      duration: "40 dakika",
-      slug: "kitap-okuma-aliskanligi-atolyesi",
-    },
-    {
-      id: 12,
-      title: "Robotik Kodlama İçerikli Oyun Atölyesi",
-      description: "Teknoloji ve programlama mantığını öğreten robotik aktiviteler",
-      image: "/coding-kids.png",
-      category: "Teknoloji",
-      ageGroup: "8-14 yaş",
-      duration: "60 dakika",
-      slug: "robotik-kodlama-oyun-atolyesi",
-    },
-    {
-      id: 13,
-      title: "Orff Müzik Atölyesi",
-      description: "Müzik aletleri ile ritim ve melodi öğrenme aktiviteleri",
-      image: "/orff-music-class.png",
-      category: "Müzik",
-      ageGroup: "4-10 yaş",
-      duration: "45 dakika",
-      slug: "orff-muzik-atolyesi",
-    },
-    {
-      id: 14,
-      title: "Oyunlarla Temel Almanca Oyun Atölyesi",
-      description: "Eğlenceli aktivitelerle Almanca kelime ve ifade öğrenme",
-      image: "/german-learning-kids.png",
-      category: "Dil Eğitimi",
-      ageGroup: "7-12 yaş",
-      duration: "45 dakika",
-      slug: "temel-almanca-oyun-atolyesi",
-    },
-  ]
+  const workshops = workshopDetails.map((w) => ({
+    id: w.id,
+    title: w.title,
+    description: w.intro || "",
+    image: w.image || "/placeholder.svg",
+    category: w.category || "",
+    ageGroup: w.ageGroup || "",
+    duration: w.duration || "",
+    slug: w.slug,
+  }))
 
   const coachingAreas = [
     "Yaşam Koçluğu",
@@ -190,9 +59,9 @@ export default function EducationPage() {
 
         {/* Content */}
         <div className="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Eğitim Programlarımız</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Atölye Programlarımız</h1>
           <p className="text-xl text-white mb-8 max-w-3xl mx-auto leading-relaxed">
-            Çocukların akademik, sosyal, fiziksel ve bilişsel gelişimlerini destekleyen kapsamlı eğitim programları ve
+            Çocukların akademik, sosyal, fiziksel ve bilişsel gelişimlerini destekleyen kapsamlı atölye programları ve
             koçluk hizmetleri
           </p>
         </div>
@@ -202,9 +71,7 @@ export default function EducationPage() {
       <section className="section-padding bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">
-              SEV-AY'da Eğitimi Destekleyici Oyun ve Hobby & Gelişim Programı
-            </h2>
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">SEV-AY'da Gelişimi Destekleyici Oyun ve Hobby & Gelişim Programı</h2>
             <p className="text-gray-600 max-w-4xl mx-auto">
               Okul saatleri dışında çocuklarınızın kaliteli zaman geçirmesi için SEV-AY'da gelişim içerikli oyun
               atölyeleri. Programımız, özellikle çalışan ebeveynlere yönelik olarak çocukların akademik, sosyal,
@@ -217,7 +84,7 @@ export default function EducationPage() {
               <div className="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <BookOpen className="text-primary-500" size={32} />
               </div>
-              <h3 className="text-xl font-semibold mb-2">14 Farklı Atölye</h3>
+              <h3 className="text-xl font-semibold mb-2">18 Farklı Atölye</h3>
               <p className="text-gray-600">
                 Çocukların farklı yeteneklerini keşfedebileceği çeşitli atölye programları
               </p>
@@ -228,7 +95,7 @@ export default function EducationPage() {
                 <Users className="text-primary-500" size={32} />
               </div>
               <h3 className="text-xl font-semibold mb-2">Uzman Koçluk</h3>
-              <p className="text-gray-600">14 farklı alanda profesyonel koçluk hizmetleri</p>
+              <p className="text-gray-600">Birçok alanda profesyonel koçluk hizmetleri</p>
             </div>
 
             <div className="card text-center">
@@ -243,11 +110,11 @@ export default function EducationPage() {
       </section>
 
       {/* Workshops Grid Section */}
-      <section className="section-padding bg-primary-50">
+      <section id="atolyeler" className="section-padding bg-primary-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Atölye Programlarımız</h2>
-            <p className="text-gray-600">Çocukların farklı yeteneklerini keşfedebileceği 14 farklı atölye programı</p>
+            <p className="text-gray-600">Çocukların farklı yeteneklerini keşfedebileceği 18 farklı atölye programı</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -349,7 +216,7 @@ export default function EducationPage() {
       </section>
 
       {/* Coaching Services */}
-      <section className="section-padding bg-white">
+      <section id="kocluklar" className="section-padding bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Koçluk Hizmetlerimiz</h2>
@@ -646,7 +513,7 @@ export default function EducationPage() {
       </section>
 
       {/* Seminars Section */}
-      <section className="section-padding bg-gray-50">
+      <section id="seminerler" className="section-padding bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Seminerlerimiz</h2>
