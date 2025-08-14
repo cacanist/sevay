@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import { Target, Eye, Heart, Award, Users, BookOpen, Shield, Star } from "lucide-react"
+import Image from "next/image"
 
 export const metadata: Metadata = {
   title: "Hakkımızda | SEV-AY Eğitim ve Kariyer Danışmanlık Merkezi",
@@ -17,13 +18,16 @@ export default function AboutPage() {
     <>
       {/* Hero Section with Background Image */}
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
-        {/* Background Image */}
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: `url('/about-us-education-center.png')`,
-          }}
-        >
+        {/* Background Image (optimized) */}
+        <div className="absolute inset-0">
+          <Image
+            src="/about-us-education-center.webp"
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center"
+          />
           <div className="absolute inset-0 bg-primary-500 bg-opacity-75"></div>
         </div>
 
@@ -138,8 +142,8 @@ export default function AboutPage() {
             <div className="order-2 lg:order-1">
               <div className="bg-gradient-to-br from-primary-100 to-honey-100 rounded-3xl p-12 text-center shadow-lg">
                 <div className="relative mb-8">
-                  <div className="w-40 h-40 bg-gradient-to-br from-primary-500 to-honey-400 rounded-full mx-auto flex items-center justify-center shadow-2xl">
-                    <span className="text-5xl font-bold text-white">SA</span>
+                  <div className="w-40 h-40 rounded-full mx-auto shadow-2xl overflow-hidden">
+                    <img src="/sevtap-aydin.jpeg" alt="Sevtap Aydın" className="w-full h-full object-cover" />
                   </div>
                   <div className="absolute -top-2 -right-2 bg-honey-300 w-12 h-12 rounded-full flex items-center justify-center">
                     <Star className="text-white" size={24} />
@@ -165,7 +169,7 @@ export default function AboutPage() {
               <h2 className="text-4xl font-bold text-gray-800 mb-8">Kurucumuz Sevtap Aydın</h2>
               <div className="space-y-6 text-gray-600 text-lg leading-relaxed">
                 <p>
-                  Ailelerin çocuklarının gerçek potansiyellerini keşfetmeleri, yoğun iş temposu ve hayat meşgaleleri içerisinde çocuklarına verimli vakit ayırabilme zorluklarını fark eden Sevtap Aydın, çocuk gelişimi ve eğitim alanında uzun yıllara dayanan deneyime sahiptir.
+                  Ailelerin çocuklarının gerçek potansiyellerini keşfetmeleri, yoğun iş temposu ve hayat meşgaleleri içerisinde çocuklarına verimli vakit ayırabilme zorluklarını fark eden Sevtap Aydın, çocuk gelişimi ve koçluk alanlarında uzun yıllara dayanan deneyime sahiptir.
                 </p>
                 <p>
                   Çalışan ebeveynlerin yaşadığı zorlukları yakından gözlemleyen Sevtap Hanım, çocukların kaliteli zaman

@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import Link from "next/link"
+import Image from "next/image"
 import { workshops as workshopDetails } from "@/lib/workshops"
 import { BookOpen, Users, Award, Clock, CheckCircle } from "lucide-react"
 
@@ -47,13 +48,16 @@ export default function EducationPage() {
     <>
       {/* Hero Section with Background Image */}
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
-        {/* Background Image */}
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: `url('/children-learning-activities.png')`,
-          }}
-        >
+        {/* Background Image (optimized) */}
+        <div className="absolute inset-0">
+          <Image
+            src="/children-learning-activities.webp"
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center"
+          />
           <div className="absolute inset-0 bg-primary-500 bg-opacity-75"></div>
         </div>
 
@@ -71,7 +75,7 @@ export default function EducationPage() {
       <section className="section-padding bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">SEV-AY'da Gelişimi Destekleyici Oyun ve Hobby & Gelişim Programı</h2>
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Sev-Ay’da Gelişimi ve Eğitimi Destekleyici Oyun ve Hobby & Gelişim Programı</h2>
             <p className="text-gray-600 max-w-4xl mx-auto">
               Okul saatleri dışında çocuklarınızın kaliteli zaman geçirmesi için SEV-AY'da gelişim içerikli oyun
               atölyeleri. Programımız, özellikle çalışan ebeveynlere yönelik olarak çocukların akademik, sosyal,

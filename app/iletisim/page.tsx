@@ -72,11 +72,9 @@ export default function ContactPage() {
                   <div>
                     <h3 className="text-lg font-semibold text-gray-800 mb-1">Adres</h3>
                     <p className="text-gray-600">
-                      Bahçelievler Mah., Turgut Reis Cad.,
+                      Bozkurt Apartmanı, Bahçelievler, Turgut Reis Cd. No: 23,
                       <br />
-                      Bozkurt Apt. No:23,
-                      <br />
-                      Muratpaşa / ANTALYA
+                      07001 Muratpaşa/Antalya
                     </p>
                   </div>
                 </div>
@@ -232,7 +230,7 @@ export default function ContactPage() {
           <div className="bg-white rounded-xl shadow-md overflow-hidden">
             <div className="aspect-w-16 aspect-h-9">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3192.8234567890123!2d30.7234567!3d36.8876543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzbCsDUzJzE1LjYiTiAzMMKwNDMnMjQuNCJF!5e0!3m2!1str!2str!4v1234567890123!5m2!1str!2str"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3191.1121558457717!2d30.6890767!3d36.88766510000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c39177ba7eac91%3A0x425e245dc3e3d03e!2sSev-Ay%20E%C4%9Fitim%20ve%20Kariyer%20Dan%C4%B1%C5%9Fmanl%C4%B1k%20Merkezi!5e0!3m2!1str!2str!4v1755163747173!5m2!1str!2str"
                 width="100%"
                 height="400"
                 style={{ border: 0 }}

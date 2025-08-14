@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import Link from "next/link"
+import Image from "next/image"
 import { Users, Heart, BookOpen, Award, ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -45,14 +46,14 @@ export default function HomePage() {
       category: "Sanat",
     },
     {
-      title: "Resim Boyama Atölyesi",
-      image: "/colorful-children-art.png",
-      category: "Sanat",
+      title: "Roman Yazımı Atölyesi",
+      image: "/roman-yazim-atolyesi.jpg",
+      category: "Yazarlık",
     },
     {
-      title: "Orff Müzik Atölyesi",
-      image: "/orff-music-class.png",
-      category: "Müzik",
+      title: "Hitabet ve Diksiyon Çalışmaları",
+      image: "/hitabet-atolyesi.jpg",
+      category: "İletişim",
     },
   ]
 
@@ -60,13 +61,16 @@ export default function HomePage() {
     <>
       {/* Hero Section */}
       <section className="relative min-h-[calc(100vh-4rem)] flex items-center justify-center overflow-hidden">
-        {/* Background Image */}
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: `url('/happy-children-classroom.png')`,
-          }}
-        >
+        {/* Background Image (optimized) */}
+        <div className="absolute inset-0">
+          <Image
+            src="/happy-children-classroom.webp"
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center"
+          />
           <div className="absolute inset-0 bg-primary-500 bg-opacity-70"></div>
         </div>
 

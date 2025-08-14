@@ -51,7 +51,7 @@ export default function Footer() {
               <div className="flex items-start">
                 <MapPin size={16} className="mr-2 text-honey-300 mt-1" />
                 <span className="text-gray-300 text-sm">
-                  Bahçelievler Mah., Turgut Reis Cad., Bozkurt Apt. No:23, Muratpaşa / ANTALYA
+                  Bozkurt Apartmanı, Bahçelievler, Turgut Reis Cd. No: 23, 07001 Muratpaşa/Antalya
                 </span>
               </div>
               <div className="flex space-x-4 mt-4">
