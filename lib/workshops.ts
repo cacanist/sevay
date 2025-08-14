@@ -84,67 +84,6 @@ export const workshops: WorkshopDetail[] = [
     ],
   },
   {
-    id: 22,
-    title: "İçsel Ritim Piyano Atölyesi",
-    slug: "icsel-ritim-piyano-atolyesi",
-    image: "/piano.JPG",
-    category: "Müzik & Sanat",
-    ageGroup: "6-15",
-    duration: "Haftada 1 gün 1 saat",
-    intro: "Çocukların müzik yeteneklerini keşfeden, içsel ritim duygusunu geliştiren ve piyano çalma becerilerini artıran atölye.",
-    objectives: [
-      "İçsel ritim duygusunu geliştirmek",
-      "Piyano çalma becerilerini artırmak",
-      "Müzik kulağını geliştirmek",
-      "Konsantrasyon ve koordinasyonu güçlendirmek",
-      "Yaratıcı müzik yapma yeteneği kazandırmak",
-      "Müzik teorisi temellerini öğretmek"
-    ],
-    targetAudience: [
-      "6-15 yaş arası çocuklar",
-      "Müzik yeteneği geliştirmek isteyenler",
-      "Piyano öğrenmek isteyenler",
-      "Ritim duygusunu güçlendirmek isteyenler"
-    ],
-    contentItems: [
-      "Temel piyano teknikleri ve duruş",
-      "Ritim ve tempo çalışmaları",
-      "Melodi ve armoni eğitimi",
-      "Doğaçlama ve yaratıcı müzik yapma",
-      "Müzik teorisi ve nota okuma",
-      "Ensemble çalışmaları",
-      "Performans ve sahne deneyimi",
-      "Müzik tarihi ve kültürü"
-    ],
-    schedule: "Haftada 1 gün 1 saat",
-    location: "Sev-ay Eğitim ve Kariyer Danışmanlık Merkezi Atölye Salonu",
-    instructor: "Alanında uzman, müzik eğitimi formasyonuna sahip piyano eğitmenlerimiz çocukların müzik yeteneklerini geliştirir.",
-    feeInfo: "Ücret bilgisi için arayınız.",
-    contactPhone: "0545 136 21 22",
-    contactWhatsapp: "0544 470 14 55",
-    testimonials: [
-      {
-        quote: "Çocuğum piyano çalmayı çok seviyor. İçsel ritim duygusu inanılmaz gelişti.",
-        author: "Selin A."
-      },
-      {
-        quote: "Bu atölye sayesinde çocuğumun müzik kulağı çok gelişti. Artık kendi melodilerini yaratıyor.",
-        author: "Burak K."
-      },
-      {
-        quote: "Piyano atölyesi çocuğumun konsantrasyonunu ve koordinasyonunu önemli ölçüde artırdı.",
-        author: "Deniz M."
-      }
-    ],
-    extraNotes: [
-      "Atölye sonunda katılım sertifikası verilir.",
-      "Bireysel ve grup eğitimi seçenekleri mevcuttur.",
-      "Kontenjan sınırlıdır.",
-      "Veliler için bilgilendirme toplantıları yapılır.",
-      "Yıl sonu konser ve performans fırsatları sunulur."
-    ],
-  },
-  {
     id: 21,
     title: "Zaman Yönetimi ve Planlı Çalışma Atölyesi",
     slug: "zaman-yonetimi-planli-calisma-atolyesi",
@@ -500,43 +439,6 @@ export const workshops: WorkshopDetail[] = [
     extraNotes: [
       "Atölye sonunda katılım sertifikası verilir.",
       "Rahat kıyafet ile gelmeniz tavsiye edilir.",
-      "Kontenjan sınırlıdır.",
-    ],
-  },
-  {
-    id: 6,
-    title: "Ödev Yapmaya Teşvik ve Motivasyon Atölyesi",
-    slug: "odev-motivasyon-atolyesi",
-    image: "/homework-motivation-kids.webp",
-    category: "Eğitim Desteği",
-    ageGroup: "6+",
-    duration: "Haftada 1 gün 1 saat",
-    intro: "Derslerini keyifle yap, başarıya adım adım ilerle!",
-    objectives: [
-      "Ders ve ödevlere karşı olumlu tutum geliştirmek",
-      "Zaman yönetimi ve planlama becerilerini artırmak",
-      "Konsantrasyon ve odaklanmayı güçlendirmek",
-      "Sorumluluk bilincini geliştirmek",
-      "Çalışma alışkanlığını eğlenceli yöntemlerle pekiştirmek",
-    ],
-    targetAudience: ["6+ çocuklar", "Ödev alışkanlığında zorlananlar", "Motivasyonunu artırmak isteyenler"],
-    contentItems: [
-      "Isınma ve dikkat toplama etkinlikleri",
-      "Zaman yönetimi oyunları",
-      "Ödevleri planlı tamamlama teknikleri",
-      "Hedef belirleme ve motivasyon çalışmaları",
-      "Grup destekli ve bireysel seanslar",
-    ],
-    schedule: "Haftada 1 gün 1 saat",
-    location: "Sev-ay Eğitim ve Kariyer Danışmanlık Merkezi Atölye Salonu",
-    instructor:
-      "Uzman eğitim koçlarımız verimli ve keyifli bir çalışma rutini oluşturur.",
-    feeInfo: "Ücret bilgisi için arayınız.",
-    contactPhone: "0545 136 21 22",
-    contactWhatsapp: "0544 470 14 55",
-    extraNotes: [
-      "Atölye sonunda katılım sertifikası verilir.",
-      "Temel ders araç-gereçlerini getirmeniz tavsiye edilir.",
       "Kontenjan sınırlıdır.",
     ],
   },
