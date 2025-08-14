@@ -230,7 +230,7 @@ export default function AboutPage() {
                   </h3>
                 <p className="text-gray-600 leading-relaxed">
                     Eğlenceli ve öğretici atölyeler, sanat ve bilim etkinlikleri ile çocuklar hem öğreniyor hem de
-                    keyifli vakit geçiriyor. 19 farklı atölye programımızla çeşitlilik sunuyoruz.
+                    keyifli vakit geçiriyor. 17 farklı atölye programımızla çeşitlilik sunuyoruz.
                   </p>
                 </div>
               </div>

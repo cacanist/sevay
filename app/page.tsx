@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
-import { Users, Heart, BookOpen, Award, ArrowRight, GraduationCap, Clock } from "lucide-react"
+import { Users, Heart, BookOpen, Award, ArrowRight, GraduationCap, Clock, CheckCircle } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "SEV-AY Eğitim ve Kariyer Danışmanlık Merkezi | Ana Sayfa",
@@ -13,73 +13,15 @@ export const metadata: Metadata = {
   },
 }
 
+import { workshops as workshopDetails } from "@/lib/workshops"
+
 export default function HomePage() {
-  const workshops = [
-    {
-      title: "Parfüm Yapım Atölyesi",
-      image: "/parfume.jpg",
-      category: "Bilim & Sanat",
-      slug: "parfum-yapim-atolyesi",
-    },
-    {
-      title: "İçsel Ritim Piyano Atölyesi",
-      image: "/piano.JPG",
-      category: "Müzik & Sanat",
-      slug: "icsel-ritim-piyano-atolyesi",
-    },
-    {
-      title: "Zaman Yönetimi ve Planlı Çalışma Atölyesi",
-      image: "/odev-yapma.jpg",
-      category: "Kişisel Gelişim",
-      slug: "zaman-yonetimi-planli-calisma-atolyesi",
-    },
-    {
-      title: "Kitap Okuma Atölyesi",
-      image: "/kitap-okuma.jpg",
-      category: "Sanat & Gelişim",
-      slug: "kitap-okuma-atolyesi",
-    },
-    {
-      title: "Temel İngilizce Oyun Atölyesi",
-      image: "/english-learning-children.webp",
-      category: "Dil Eğitimi",
-    },
-    {
-      title: "Satranç Oyun Atölyesi",
-      image: "/classroom-chess-game.webp",
-      category: "Strateji Oyunları",
-    },
-    {
-      title: "Lego & Zeka Oyunları",
-      image: "/children-building-and-puzzles.webp",
-      category: "Yaratıcılık",
-    },
-    {
-      title: "Dans ve Hareket Atölyesi",
-      image: "/colorful-dance-studio.webp",
-      category: "Fiziksel Gelişim",
-    },
-    {
-      title: "Robotik Kodlama Atölyesi",
-      image: "/coding-kids.webp",
-      category: "Teknoloji",
-    },
-    {
-      title: "Yaratıcı Drama",
-      image: "/children-creative-drama.webp",
-      category: "Sanat",
-    },
-    {
-      title: "Roman Yazımı Atölyesi",
-      image: "/roman-yazim-atolyesi.webp",
-      category: "Yazarlık",
-    },
-    {
-      title: "Hitabet ve Diksiyon Çalışmaları",
-      image: "/hitabet-atolyesi.webp",
-      category: "İletişim",
-    },
-  ]
+  const workshops = workshopDetails.slice(0, 12).map((w) => ({
+    title: w.title,
+    image: w.image || "/placeholder.svg",
+    category: w.category || "",
+    slug: w.slug,
+  }))
 
   return (
     <>
@@ -98,38 +40,29 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-primary-500 bg-opacity-70"></div>
         </div>
 
-        {/* Content */}
-        <div className="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+        {/* Hero Content */}
+        <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6">
             SEV-AY Eğitim ve Kariyer
-            <span className="text-honey-300"> Danışmanlık Merkezi</span>
+            <br />
+            <span className="text-honey-300">Danışmanlık Merkezi</span>
           </h1>
-          <p className="text-xl md:text-2xl text-white mb-8 max-w-3xl mx-auto leading-relaxed">
-            Çocuklar için oyun temelli gelişim atölyeleri ve ailelere özel koçluk programlarıyla güvenli, kaliteli bir
-            eğitim ortamı sunuyoruz.
+          <p className="text-xl md:text-2xl mb-8 opacity-90">
+            Çocuklarınızın gelişimi için güvenli ve kaliteli bir eğitim ortamı sunuyoruz.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/egitimler" className="btn-accent">
               Atölye Programlarımız
               <ArrowRight className="ml-2 inline" size={20} />
             </Link>
-            <Link
-              href="/seminerler"
-              className="bg-honey-300 text-white hover:bg-honey-400 px-8 py-3 rounded-lg font-medium transition-colors duration-200"
-            >
-              Profesyonel Seminerler
-            </Link>
-            <Link
-              href="/iletisim"
-              className="bg-white text-primary-500 hover:bg-gray-100 px-8 py-3 rounded-lg font-medium transition-colors duration-200"
-            >
+            <Link href="/iletisim" className="btn-secondary">
               İletişime Geçin
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Workshops Grid Section */}
+      {/* Popular Workshops Section */}
       <section className="section-padding bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
@@ -192,137 +125,6 @@ export default function HomePage() {
               Tüm Atölyeleri Görüntüle
               <ArrowRight className="ml-2" size={20} />
             </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Features Section */}
-      <section className="section-padding bg-gray-50">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">Neden SEV-AY?</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Çünkü her çocuk ilgiyle büyümeli, her ebeveyn çocuğunu güvende bilmenin huzurunu yaşamalı.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="card text-center">
-              <div className="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Heart className="text-primary-500" size={32} />
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Güvenli Ortam</h3>
-              <p className="text-gray-600">Çocuğunuz siz çalışırken güvende ve mutlu bir ortamda vakit geçiriyor.</p>
-            </div>
-
-            <div className="card text-center">
-              <div className="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="text-primary-500" size={32} />
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Sosyal Gelişim</h3>
-              <p className="text-gray-600">
-                Grup oyunları ve sosyal aktivitelerle çocukların gelişimini destekliyoruz.
-              </p>
-            </div>
-
-            <div className="card text-center">
-              <div className="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <BookOpen className="text-primary-500" size={32} />
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Eğitici Atölyeler</h3>
-              <p className="text-gray-600">19 farklı atölye programı ile çocukların yeteneklerini keşfediyoruz.</p>
-            </div>
-
-            <div className="card text-center">
-              <div className="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Award className="text-primary-500" size={32} />
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Uzman Kadro</h3>
-              <p className="text-gray-600">Alanında uzman koçlar ve eğitmenler tarafından sunulan kaliteli hizmet.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* About Us Section */}
-      <section className="section-padding bg-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-4">SEV-AY Hakkında</h2>
-            <p className="text-muted max-w-2xl mx-auto">
-              Çocukların gelişimine katkı sağlamak ve ailelere destek olmak için kurulmuş bir eğitim merkeziyiz
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
-            <div>
-              <h3 className="text-2xl font-bold text-foreground mb-6">Hikayemiz</h3>
-              <div className="space-y-4 text-muted">
-                <p>
-                  SEV-AY Eğitim ve Kariyer Danışmanlık Merkezi, çalışan ebeveynlerin yaşadığı zorlukları yakından
-                  gözlemleyen kurucumuz Sevtap Aydın tarafından, çocukların kaliteli zaman geçirebileceği ve
-                  gelişimlerini destekleyecek bir merkez kurma hayaliyle gerçekleştirilmiştir.
-                </p>
-                <p>
-                  "Her çocuk ilgiyle büyümeli, her ebeveyn çocuğunu güvende bilmenin huzurunu yaşamalı" felsefesiyle
-                  hareket eden merkezimiz, bu değerler üzerine inşa edilmiştir.
-                </p>
-                <p>
-                  Günümüzün yoğun iş temposunda ebeveyn olmak büyük sorumluluk taşır. İşte tam da bu noktada, çalışan
-                  anne ve babalara özel destek programımızla yanınızdayız!
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-primary-50 rounded-2xl p-8">
-              <h3 className="text-2xl font-bold text-foreground mb-6">Değerlerimiz</h3>
-              <div className="space-y-6">
-                <div className="flex items-start">
-                  <div className="bg-primary-500 w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                    <Heart className="text-white" size={20} />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-1">Sevgi ve Güven</h4>
-                    <p className="text-muted text-sm">Her çocuğa sevgiyle yaklaşır, güvenli bir ortam sağlarız.</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start">
-                  <div className="bg-honey-300 w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                    <Award className="text-white" size={20} />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-1">Kalite ve Profesyonellik</h4>
-                    <p className="text-muted text-sm">Uzman kadromuzla en yüksek kalitede hizmet sunarız.</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start">
-                  <div className="bg-primary-500 w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                    <Users className="text-white" size={20} />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-1">Bireysel Yaklaşım</h4>
-                    <p className="text-muted text-sm">
-                      Her çocuğun benzersizliğini kabul eder, kişisel gelişimini destekleriz.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-gradient-to-r from-primary-500 to-honey-300 rounded-2xl p-8 text-white text-center">
-            <h3 className="text-2xl font-bold mb-4">SEV-AY'ın Amacı</h3>
-            <p className="text-lg mb-6 opacity-90">
-              Okul saatleri dışında çocuklarınızın kaliteli zaman geçirmesi için SEV-AY'da gelişim içerikli oyun
-              atölyeleri. Programımız, özellikle çalışan ebeveynlere yönelik olarak çocukların akademik, sosyal,
-              fiziksel ve bilişsel gelişimlerini desteklemeyi amaçlamaktadır.
-            </p>
-            <p className="opacity-90">
-              Siz iş yerlerinizde çalışırken, çocuklarınıza kaliteli ve verimli zaman sunmak bizim için büyük bir önem
-              taşıyor.
-            </p>
           </div>
         </div>
       </section>
@@ -450,6 +252,434 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Coaching Services */}
+      <section id="kocluk" className="section-padding bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Koçluk Hizmetlerimiz</h2>
+            <p className="text-gray-600">
+              Alanında uzman koçlar tarafından, aylık paketler hâlinde randevulu şekilde yapılır
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 border border-gray-100 hover:border-primary-200">
+              <div className="flex items-center mb-4">
+                <div className="bg-gradient-to-br from-primary-500 to-primary-600 w-12 h-12 rounded-2xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-bold text-gray-800 group-hover:text-primary-600 transition-colors duration-300">
+                  Yaşam Koçluğu
+                </h3>
+              </div>
+              <p className="text-gray-600 text-sm">
+                Kişisel hedeflerinize ulaşmanız için yaşam dengenizi kurmanızda destek
+              </p>
+            </div>
+
+            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 border border-gray-100 hover:border-primary-200">
+              <div className="flex items-center mb-4">
+                <div className="bg-gradient-to-br from-honey-400 to-honey-500 w-12 h-12 rounded-2xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-bold text-gray-800 group-hover:text-honey-600 transition-colors duration-300">
+                  Öğrenci & Eğitim Koçluğu
+                </h3>
+              </div>
+              <p className="text-gray-600 text-sm">Akademik başarı ve etkili öğrenme teknikleri geliştirme desteği</p>
+            </div>
+
+            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 border border-gray-100 hover:border-primary-200">
+              <div className="flex items-center mb-4">
+                <div className="bg-gradient-to-br from-green-500 to-green-600 w-12 h-12 rounded-2xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-bold text-gray-800 group-hover:text-green-600 transition-colors duration-300">
+                  Ebeveyn Koçluğu
+                </h3>
+              </div>
+              <p className="text-gray-600 text-sm">
+                Etkili ebeveynlik becerileri ve çocuk gelişimi konularında rehberlik
+              </p>
+            </div>
+
+            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 border border-gray-100 hover:border-primary-200">
+              <div className="flex items-center mb-4">
+                <div className="bg-gradient-to-br from-blue-500 to-blue-600 w-12 h-12 rounded-2xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-bold text-gray-800 group-hover:text-blue-600 transition-colors duration-300">
+                  Nefes Koçluğu
+                </h3>
+              </div>
+              <p className="text-gray-600 text-sm">Stres yönetimi ve mindfulness için nefes teknikleri eğitimi</p>
+            </div>
+
+            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 border border-gray-100 hover:border-primary-200">
+              <div className="flex items-center mb-4">
+                <div className="bg-gradient-to-br from-purple-500 to-purple-600 w-12 h-12 rounded-2xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-bold text-gray-800 group-hover:text-purple-600 transition-colors duration-300">
+                  Hareket ve Dans, Performans Koçluğu
+                </h3>
+              </div>
+              <p className="text-gray-600 text-sm">Sahne performansı ve beden dili geliştirme teknikleri</p>
+            </div>
+
+            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 border border-gray-100 hover:border-primary-200">
+              <div className="flex items-center mb-4">
+                <div className="bg-gradient-to-br from-indigo-500 to-indigo-600 w-12 h-12 rounded-2xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m8 6V8a2 2 0 00-2-2H10a2 2 0 00-2 2v8a2 2 0 002 2h4a2 2 0 002-2z"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-bold text-gray-800 group-hover:text-indigo-600 transition-colors duration-300">
+                  Kariyer Koçluğu
+                </h3>
+              </div>
+              <p className="text-gray-600 text-sm">Profesyonel hedeflerinize ulaşmak için kariyer planlama desteği</p>
+            </div>
+
+            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 border border-gray-100 hover:border-primary-200">
+              <div className="flex items-center mb-4">
+                <div className="bg-gradient-to-br from-teal-500 to-teal-600 w-12 h-12 rounded-2xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-bold text-gray-800 group-hover:text-teal-600 transition-colors duration-300">
+                  Takım Koçluğu
+                </h3>
+              </div>
+              <p className="text-gray-600 text-sm">Ekip çalışması ve liderlik becerilerini geliştirme programları</p>
+            </div>
+
+            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 border border-gray-100 hover:border-primary-200">
+              <div className="flex items-center mb-4">
+                <div className="bg-gradient-to-br from-pink-500 to-pink-600 w-12 h-12 rounded-2xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-bold text-gray-800 group-hover:text-pink-600 transition-colors duration-300">
+                  İlişki Koçluğu
+                </h3>
+              </div>
+              <p className="text-gray-600 text-sm">Kişilerarası ilişkileri güçlendirme ve iletişim becerileri</p>
+            </div>
+
+            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 border border-gray-100 hover:border-primary-200">
+              <div className="flex items-center mb-4">
+                <div className="bg-gradient-to-br from-orange-500 to-orange-600 w-12 h-12 rounded-2xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-bold text-gray-800 group-hover:text-orange-600 transition-colors duration-300">
+                  Aile Koçluğu
+                </h3>
+              </div>
+              <p className="text-gray-600 text-sm">Aile içi iletişimi güçlendirme ve uyum sağlama teknikleri</p>
+            </div>
+
+            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 border border-gray-100 hover:border-primary-200">
+              <div className="flex items-center mb-4">
+                <div className="bg-gradient-to-br from-red-500 to-red-600 w-12 h-12 rounded-2xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-bold text-gray-800 group-hover:text-red-600 transition-colors duration-300">
+                  Diksiyon ve Etkili Konuşma
+                </h3>
+              </div>
+              <p className="text-gray-600 text-sm">Sunum becerileri ve etkili iletişim teknikleri geliştirme</p>
+            </div>
+
+            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 border border-gray-100 hover:border-primary-200">
+              <div className="flex items-center mb-4">
+                <div className="bg-gradient-to-br from-yellow-500 to-yellow-600 w-12 h-12 rounded-2xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-bold text-gray-800 group-hover:text-yellow-600 transition-colors duration-300">
+                  Zaman ve Stres Yönetimi
+                </h3>
+              </div>
+              <p className="text-gray-600 text-sm">Verimlilik artırma ve stresle başa çıkma stratejileri</p>
+            </div>
+
+            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 border border-gray-100 hover:border-primary-200">
+              <div className="flex items-center mb-4">
+                <div className="bg-gradient-to-br from-cyan-500 to-cyan-600 w-12 h-12 rounded-2xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-bold text-gray-800 group-hover:text-cyan-600 transition-colors duration-300">
+                  Bilinçaltı Uzmanı ile Mindfulness
+                </h3>
+              </div>
+              <p className="text-gray-600 text-sm">Farkındalık artırma ve zihinsel sağlık geliştirme teknikleri</p>
+            </div>
+
+            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 border border-gray-100 hover:border-primary-200">
+              <div className="flex items-center mb-4">
+                <div className="bg-gradient-to-br from-violet-500 to-violet-600 w-12 h-12 rounded-2xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-bold text-gray-800 group-hover:text-violet-600 transition-colors duration-300">
+                  Kuantum Koçluğu
+                </h3>
+              </div>
+              <p className="text-gray-600 text-sm">Enerji çalışması ve bilinç dönüşümü teknikleri</p>
+            </div>
+
+            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 border border-gray-100 hover:border-primary-200">
+              <div className="flex items-center mb-4">
+                <div className="bg-gradient-to-br from-emerald-500 to-emerald-600 w-12 h-12 rounded-2xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-bold text-gray-800 group-hover:text-emerald-600 transition-colors duration-300">
+                  Spor Koçluğu
+                </h3>
+              </div>
+              <p className="text-gray-600 text-sm">Fiziksel performans artırma ve spor psikolojisi desteği</p>
+            </div>
+          </div>
+
+          <div className="mt-12 bg-honey-50 p-8 rounded-xl">
+            <h3 className="text-xl font-semibold text-gray-800 mb-4">Seanslar Nasıl Düzenlenir?</h3>
+            <div className="space-y-3 text-gray-600">
+              <div className="flex items-start">
+                <CheckCircle className="text-green-500 mr-2 mt-1" size={16} />
+                <p>Danışan ile koç, uygunluk durumuna göre ofis görevlisi tarafından organize edilir</p>
+              </div>
+              <div className="flex items-start">
+                <CheckCircle className="text-green-500 mr-2 mt-1" size={16} />
+                <p>Verimlilik için en az 1 aylık kayıt yapılmalıdır</p>
+              </div>
+              <div className="flex items-start">
+                <CheckCircle className="text-green-500 mr-2 mt-1" size={16} />
+                <p>Kişisel gelişimi destekleyici atölyeler alanında uzman koçlar ve eğitmenler tarafından sunulur</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us Section */}
+      <section className="section-padding bg-gray-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Neden SEV-AY?</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Çünkü her çocuk ilgiyle büyümeli, her ebeveyn çocuğunu güvende bilmenin huzurunu yaşamalı.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="card text-center">
+              <div className="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Heart className="text-primary-500" size={32} />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Güvenli Ortam</h3>
+              <p className="text-gray-600">Çocuğunuz siz çalışırken güvende ve mutlu bir ortamda vakit geçiriyor.</p>
+            </div>
+
+            <div className="card text-center">
+              <div className="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users className="text-primary-500" size={32} />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Sosyal Gelişim</h3>
+              <p className="text-gray-600">
+                Grup oyunları ve sosyal aktivitelerle çocukların gelişimini destekliyoruz.
+              </p>
+            </div>
+
+            <div className="card text-center">
+              <div className="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <BookOpen className="text-primary-500" size={32} />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Eğitici Atölyeler</h3>
+              <p className="text-gray-600">17 farklı atölye programı ile çocukların yeteneklerini keşfediyoruz.</p>
+            </div>
+
+            <div className="card text-center">
+              <div className="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Award className="text-primary-500" size={32} />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Uzman Kadro</h3>
+              <p className="text-gray-600">Alanında uzman koçlar ve eğitmenler tarafından sunulan kaliteli hizmet.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Us Section */}
+      <section className="section-padding bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-foreground mb-4">SEV-AY Hakkında</h2>
+            <p className="text-muted max-w-2xl mx-auto">
+              Çocukların gelişimine katkı sağlamak ve ailelere destek olmak için kurulmuş bir eğitim merkeziyiz
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+            <div>
+              <h3 className="text-2xl font-bold text-foreground mb-6">Hikayemiz</h3>
+              <div className="space-y-4 text-muted">
+                <p>
+                  SEV-AY Eğitim ve Kariyer Danışmanlık Merkezi, çalışan ebeveynlerin yaşadığı zorlukları yakından
+                  gözlemleyen kurucumuz Sevtap Aydın tarafından, çocukların kaliteli zaman geçirebileceği ve
+                  gelişimlerini destekleyecek bir merkez kurma hayaliyle gerçekleştirilmiştir.
+                </p>
+                <p>
+                  "Her çocuk ilgiyle büyümeli, her ebeveyn çocuğunu güvende bilmenin huzurunu yaşamalı" felsefesiyle
+                  hareket eden merkezimiz, bu değerler üzerine inşa edilmiştir.
+                </p>
+                <p>
+                  Günümüzün yoğun iş temposunda ebeveyn olmak büyük sorumluluk taşır. İşte tam da bu noktada, çalışan
+                  anne ve babalara özel destek programımızla yanınızdayız!
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-primary-50 rounded-2xl p-8">
+              <h3 className="text-2xl font-bold text-foreground mb-6">Değerlerimiz</h3>
+              <div className="space-y-6">
+                <div className="flex items-start">
+                  <div className="bg-primary-500 w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                    <Heart className="text-white" size={20} />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-1">Sevgi ve Güven</h4>
+                    <p className="text-muted text-sm">Her çocuğa sevgiyle yaklaşır, güvenli bir ortam sağlarız.</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start">
+                  <div className="bg-honey-300 w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                    <Award className="text-white" size={20} />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-1">Kalite ve Profesyonellik</h4>
+                    <p className="text-muted text-sm">Uzman kadromuzla en yüksek kalitede hizmet sunarız.</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start">
+                  <div className="bg-primary-500 w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                    <Users className="text-white" size={20} />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-1">Bireysel Yaklaşım</h4>
+                    <p className="text-muted text-sm">
+                      Her çocuğun benzersizliğini kabul eder, kişisel gelişimini destekleriz.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-r from-primary-500 to-honey-300 rounded-2xl p-8 text-white text-center">
+            <h3 className="text-2xl font-bold mb-4">SEV-AY'ın Amacı</h3>
+            <p className="text-lg mb-6 opacity-90">
+              Okul saatleri dışında çocuklarınızın kaliteli zaman geçirmesi için SEV-AY'da gelişim içerikli oyun
+              atölyeleri. Programımız, özellikle çalışan ebeveynlere yönelik olarak çocukların akademik, sosyal,
+              fiziksel ve bilişsel gelişimlerini desteklemeyi amaçlamaktadır.
+            </p>
+            <p className="opacity-90">
+              Siz iş yerlerinizde çalışırken, çocuklarınıza kaliteli ve verimli zaman sunmak bizim için büyük bir önem
+              taşıyor.
+            </p>
           </div>
         </div>
       </section>

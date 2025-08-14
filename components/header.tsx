@@ -12,6 +12,7 @@ export default function Header() {
     { name: "Hakkımızda", href: "/hakkimizda" },
     { name: "Atölyeler", href: "/egitimler" },
     { name: "Seminerler", href: "/seminerler" },
+    { name: "Koçluk", href: "/#kocluk" },
     { name: "İletişim", href: "/iletisim" },
   ]
 

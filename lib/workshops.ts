@@ -144,66 +144,7 @@ export const workshops: WorkshopDetail[] = [
       "Sürekli takip ve değerlendirme yapılır."
     ],
   },
-  {
-    id: 20,
-    title: "Kitap Okuma Atölyesi",
-    slug: "kitap-okuma-atolyesi",
-    image: "/kitap-okuma.jpg",
-    category: "Sanat & Gelişim",
-    ageGroup: "6-12",
-    duration: "Haftada 1 gün 1 saat",
-    intro: "Çocukların okuma sevgisini geliştiren, yaratıcı düşünme ve hayal gücünü destekleyen atölye.",
-    objectives: [
-      "Okuma alışkanlığı kazandırmak",
-      "Hayal gücünü ve yaratıcılığı geliştirmek",
-      "Kritik düşünme becerilerini artırmak",
-      "Kelime dağarcığını zenginleştirmek",
-      "Empati ve sosyal becerileri güçlendirmek",
-      "Konsantrasyon süresini uzatmak"
-    ],
-    targetAudience: [
-      "6-12 yaş arası çocuklar",
-      "Okuma sevgisi geliştirmek isteyenler",
-      "Hayal gücünü geliştirmek isteyenler",
-      "Sosyal becerilerini güçlendirmek isteyenler"
-    ],
-    contentItems: [
-      "Hikaye okuma ve anlatma etkinlikleri",
-      "Karakter analizi ve canlandırma",
-      "Kitap tartışma grupları",
-      "Yaratıcı yazma çalışmaları",
-      "Resimli kitap inceleme",
-      "Sesli okuma ve telaffuz çalışmaları",
-      "Kitap önerisi ve paylaşım",
-      "Kütüphane ziyaretleri"
-    ],
-    schedule: "Haftada 1 gün 1 saat",
-    location: "Sev-ay Eğitim ve Kariyer Danışmanlık Merkezi Atölye Salonu",
-    instructor: "Alanında uzman, pedagojik formasyona sahip eğitmenlerimiz çocukların okuma sevgisini geliştirir.",
-    feeInfo: "Ücret bilgisi için arayınız.",
-    contactPhone: "0545 136 21 22",
-    contactWhatsapp: "0544 470 14 55",
-    testimonials: [
-      {
-        quote: "Çocuğum artık her gün kitap okumayı bekliyor. Atölye sayesinde okuma sevgisi gelişti.",
-        author: "Fatma K."
-      },
-      {
-        quote: "Kitap okuma atölyesi çocuğumun hayal gücünü çok geliştirdi. Artık kendi hikayelerini yazıyor.",
-        author: "Mehmet A."
-      },
-      {
-        quote: "Çocuklar birbirleriyle kitap hakkında sohbet ediyor, bu çok güzel bir gelişim.",
-        author: "Ayşe Y."
-      }
-    ],
-    extraNotes: [
-      "Atölye sonunda katılım sertifikası verilir.",
-      "Çocukların seviyesine uygun kitaplar seçilir.",
-      "Kontenjan sınırlıdır.",
-      "Veliler için bilgilendirme toplantıları yapılır."
-    ],
-  },
+
   {
     id: 10,
     title: "Yaratıcı Drama",
@@ -442,43 +383,7 @@ export const workshops: WorkshopDetail[] = [
       "Kontenjan sınırlıdır.",
     ],
   },
-  {
-    id: 7,
-    title: "Zaman Yönetimi ve Planlı Ders Çalışma Atölyesi",
-    slug: "zaman-yonetimi-ders-calisma-atolyesi",
-    image: "/study-planning-kids.webp",
-    category: "Öğrenci Koçluğu",
-    ageGroup: "6+",
-    duration: "Haftada 1 gün 1 saat",
-    intro: "Zamanını doğru kullan, derslerinde fark yarat!",
-    objectives: [
-      "Zamanı verimli kullanma",
-      "Planlı ve düzenli ders çalışma",
-      "Öncelik belirleme ve hedef koyma",
-      "Konsantrasyon ve odaklanmayı güçlendirme",
-      "Sürdürülebilir çalışma düzeni oluşturma",
-    ],
-    targetAudience: ["6+ çocuklar", "Zaman yönetiminde zorlananlar", "Hedeflerine ulaşmak isteyen herkes"],
-    contentItems: [
-      "Zaman planlama oyunları",
-      "Hedef belirleme ve küçük adımlar",
-      "Dikkat ve mola yönetimi",
-      "Günlük/haftalık plan oluşturma",
-      "Grup destekli pratikler ve mini yarışmalar",
-    ],
-    schedule: "Haftada 1 gün 1 saat",
-    location: "Sev-ay Eğitim ve Kariyer Danışmanlık Merkezi Atölye Salonu",
-    instructor:
-      "Uzman koçlarımız verimli ders çalışma ve motivasyon konusunda rehberlik eder.",
-    feeInfo: "Ücret bilgisi için arayınız.",
-    contactPhone: "0545 136 21 22",
-    contactWhatsapp: "0544 470 14 55",
-    extraNotes: [
-      "Atölye sonunda katılım sertifikası verilir.",
-      "Defter, kalem ve ajanda getirmeniz tavsiye edilir.",
-      "Kontenjan sınırlıdır.",
-    ],
-  },
+
   {
     id: 8,
     title: "Temel Resim Boyama İçerikli Oyun Atölyesi",
@@ -553,43 +458,7 @@ export const workshops: WorkshopDetail[] = [
       "Kontenjan sınırlıdır.",
     ],
   },
-  {
-    id: 11,
-    title: "Kitap Okuma Alışkanlığı Atölyesi",
-    slug: "kitap-okuma-aliskanligi-atolyesi",
-    image: "/children-reading-books.webp",
-    category: "Eğitim",
-    ageGroup: "6+",
-    duration: "Haftada 1 gün 1 saat",
-    intro: "Okuma sevgisiyle hayal gücünü keşfet!",
-    objectives: [
-      "Okuma sevgisini ve alışkanlığını kazandırmak",
-      "Hayal gücü, kelime dağarcığı ve ifade becerisini geliştirmek",
-      "Dikkat ve odaklanmayı artırmak",
-      "Yorumlama ve analiz becerilerini güçlendirmek",
-      "Paylaşım kültürü ve sosyal iletişimi desteklemek",
-    ],
-    targetAudience: ["6+ çocuklar", "Gençler ve yetişkinler", "Okuma alışkanlığı kazanmak isteyen herkes"],
-    contentItems: [
-      "Eğlenceli okuma saatleri",
-      "Kitap seçme ve değerlendirme",
-      "Hikâye tamamlama ve yaratıcı yazma",
-      "Kitap sohbetleri ve tartışmalar",
-      "Okunanlardan ilhamla resim/drama etkinlikleri",
-    ],
-    schedule: "Haftada 1 gün 1 saat",
-    location: "Sev-ay Eğitim ve Kariyer Danışmanlık Merkezi Atölye Salonu",
-    instructor:
-      "Okuma koçlarımız ilham verici ve etkileşimli yöntemler kullanır.",
-    feeInfo: "Ücret bilgisi için arayınız.",
-    contactPhone: "0545 136 21 22",
-    contactWhatsapp: "0544 470 14 55",
-    extraNotes: [
-      "Atölye sonunda katılım sertifikası verilir.",
-      "Seçilecek kitaplar önerilir veya katılımcı getirir.",
-      "Kontenjan sınırlıdır.",
-    ],
-  },
+
   {
     id: 12,
     title: "Robotik Kodlama İçerikli Oyun Atölyesi",
@@ -839,6 +708,116 @@ export const workshops: WorkshopDetail[] = [
       "Piyano ve müzik aletleri atölye tarafından sağlanır.",
       "Rahat kıyafet tavsiye edilir.",
       "Kontenjan sınırlıdır.",
+    ],
+  },
+  {
+    id: 24,
+    title: "Ödev Yapmaya Teşvik ve Motivasyon Atölyesi",
+    slug: "odev-yapmaya-tesvik-motivasyon-atolyesi",
+    image: "/Unknown.jpeg",
+    category: "Kişisel Gelişim",
+    ageGroup: "6+",
+    duration: "Haftada 1 gün 1 saat",
+    intro: "Derslerini keyifle yap, başarıya adım adım ilerle!",
+    objectives: [
+      "Ders ve ödevlere karşı olumlu tutum geliştirmek",
+      "Zaman yönetimi ve planlama becerilerini artırmak",
+      "Konsantrasyon ve odaklanma süresini uzatmak",
+      "Sorumluluk bilincini güçlendirmek",
+      "Çalışma alışkanlığını eğlenceli yöntemlerle pekiştirmek"
+    ],
+    targetAudience: [
+      "6 yaş ve üzeri çocuklar",
+      "Ödev yapma alışkanlığı kazanmakta zorlanan çocuklar",
+      "Motivasyonunu artırmak ve derslerinde düzenli çalışmak isteyen herkes"
+    ],
+    contentItems: [
+      "Eğlenceli ısınma ve dikkat toplama etkinlikleri",
+      "Zaman yönetimi oyunları",
+      "Ödevleri planlı şekilde tamamlama teknikleri",
+      "Hedef belirleme ve motivasyon çalışmaları",
+      "Grup destekli ve bireysel ödev tamamlama seansları"
+    ],
+    schedule: "Haftada 1 gün 1 saat",
+    location: "Sev-ay Eğitim ve Kariyer Danışmanlık Merkezi Atölye Salonu",
+    instructor: "Alanında uzman eğitim koçlarımız; öğrencilerin hem keyif alarak hem de verimli çalışarak ödevlerini tamamlamasına rehberlik ediyor.",
+    feeInfo: "Ücret: İletişim numaralarımızdan bilgi alabilirsiniz.",
+    contactPhone: "0545 136 21 22",
+    contactWhatsapp: "0544 470 14 55",
+    testimonials: [
+      {
+        quote: "Çocuğum artık ödevlerini keyifle yapıyor. Motivasyonu çok arttı.",
+        author: "Ayşe M."
+      },
+      {
+        quote: "Bu atölye çocuğumun çalışma alışkanlığını tamamen değiştirdi.",
+        author: "Mehmet K."
+      },
+      {
+        quote: "Ödev yapma artık bir yük değil, eğlenceli bir aktivite haline geldi.",
+        author: "Fatma L."
+      }
+    ],
+    extraNotes: [
+      "Atölye sonunda katılım sertifikası verilir.",
+      "Defter, kalem gibi temel ders araç gereçlerini yanınızda getirmeniz tavsiye edilir.",
+      "Kontenjan sınırlıdır.",
+      "Hemen kayıt olun, ödevler yük değil başarıya giden bir yol olsun!"
+    ],
+  },
+  {
+    id: 25,
+    title: "Kitap Okuma Alışkanlığı Atölyesi",
+    slug: "kitap-okuma-aliskanligi-atolyesi",
+    image: "/kitap-okuma.jpg",
+    category: "Kişisel Gelişim",
+    ageGroup: "6+",
+    duration: "Haftada 1 gün 1 saat",
+    intro: "Okuma sevgisiyle hayal gücünü keşfet, bilgi dünyasına yolculuğa çık!",
+    objectives: [
+      "Okuma sevgisini ve alışkanlığını kazandırmak",
+      "Hayal gücünü, kelime dağarcığını ve ifade becerisini geliştirmek",
+      "Dikkat ve odaklanma yeteneğini artırmak",
+      "Yorumlama ve analiz becerilerini güçlendirmek",
+      "Paylaşım kültürü ve kitap üzerinden sosyal iletişimi desteklemek"
+    ],
+    targetAudience: [
+      "6 yaş ve üzeri çocuklar",
+      "Gençler ve yetişkinler",
+      "Okuma alışkanlığı kazanmak veya kitap dünyasında yeni yolculuklara çıkmak isteyen herkes"
+    ],
+    contentItems: [
+      "Eğlenceli okuma saatleri",
+      "Kitap seçme, tanıma ve değerlendirme etkinlikleri",
+      "Hikâye tamamlama ve yaratıcı yazma çalışmaları",
+      "Grup halinde kitap sohbetleri ve tartışmalar",
+      "Okunan kitaplardan ilhamla resim, drama veya kısa oyun etkinlikleri"
+    ],
+    schedule: "Haftada 1 gün 1 saat",
+    location: "Sev-ay Eğitim ve Kariyer Danışmanlık Merkezi Atölye Salonu",
+    instructor: "Alanında deneyimli okuma koçlarımız ve eğitimcilerimiz; kitap sevgisini katılımcılara ilham verici, keyifli ve etkileşimli yöntemlerle aktarıyor.",
+    feeInfo: "Ücret: İletişim numaralarımızdan bilgi alabilirsiniz.",
+    contactPhone: "0545 136 21 22",
+    contactWhatsapp: "0544 470 14 55",
+    testimonials: [
+      {
+        quote: "Çocuğum artık kitap okumayı çok seviyor. Her gün yeni bir kitap istiyor.",
+        author: "Elif S."
+      },
+      {
+        quote: "Bu atölye çocuğumun hayal gücünü çok geliştirdi.",
+        author: "Ahmet Y."
+      },
+      {
+        quote: "Kitap okuma alışkanlığı kazandırmak için mükemmel bir atölye.",
+        author: "Zeynep K."
+      }
+    ],
+    extraNotes: [
+      "Atölye sonunda katılım sertifikası verilir.",
+      "Seçilecek kitaplar atölye tarafından önerilir veya katılımcı getirir.",
+      "Kontenjan sınırlıdır.",
+      "Hemen kayıt olun, sayfaların büyülü dünyasına adım atın!"
     ],
   },
 ]
