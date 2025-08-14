@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
-import { Users, Heart, BookOpen, Award, ArrowRight } from "lucide-react"
+import { Users, Heart, BookOpen, Award, ArrowRight, GraduationCap, Clock } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "SEV-AY Eğitim ve Kariyer Danışmanlık Merkezi | Ana Sayfa",
@@ -15,6 +15,30 @@ export const metadata: Metadata = {
 
 export default function HomePage() {
   const workshops = [
+    {
+      title: "Parfüm Yapım Atölyesi",
+      image: "/parfume.jpg",
+      category: "Bilim & Sanat",
+      slug: "parfum-yapim-atolyesi",
+    },
+    {
+      title: "İçsel Ritim Piyano Atölyesi",
+      image: "/piano.JPG",
+      category: "Müzik & Sanat",
+      slug: "icsel-ritim-piyano-atolyesi",
+    },
+    {
+      title: "Zaman Yönetimi ve Planlı Çalışma Atölyesi",
+      image: "/odev-yapma.jpg",
+      category: "Kişisel Gelişim",
+      slug: "zaman-yonetimi-planli-calisma-atolyesi",
+    },
+    {
+      title: "Kitap Okuma Atölyesi",
+      image: "/kitap-okuma.jpg",
+      category: "Sanat & Gelişim",
+      slug: "kitap-okuma-atolyesi",
+    },
     {
       title: "Temel İngilizce Oyun Atölyesi",
       image: "/english-learning-children.webp",
@@ -90,6 +114,12 @@ export default function HomePage() {
               <ArrowRight className="ml-2 inline" size={20} />
             </Link>
             <Link
+              href="/seminerler"
+              className="bg-honey-300 text-white hover:bg-honey-400 px-8 py-3 rounded-lg font-medium transition-colors duration-200"
+            >
+              Profesyonel Seminerler
+            </Link>
+            <Link
               href="/iletisim"
               className="bg-white text-primary-500 hover:bg-gray-100 px-8 py-3 rounded-lg font-medium transition-colors duration-200"
             >
@@ -111,9 +141,10 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
             {workshops.map((workshop, index) => (
-              <div
+              <Link
                 key={index}
-                className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+                href={`/egitimler/${workshop.slug || workshop.title.toLowerCase().replace(/\s+/g, '-')}`}
+                className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 block"
               >
                 <div className="aspect-[4/3] relative">
                   <img
@@ -149,7 +180,7 @@ export default function HomePage() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
 
@@ -292,6 +323,70 @@ export default function HomePage() {
               Siz iş yerlerinizde çalışırken, çocuklarınıza kaliteli ve verimli zaman sunmak bizim için büyük bir önem
               taşıyor.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Seminars Section */}
+      <section className="section-padding bg-gray-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Profesyonel Seminerler</h2>
+            <p className="text-gray-600 max-w-3xl mx-auto">
+              Eğitim kurumları ve sağlık kuruluşları için özel olarak tasarlanmış seminer programları
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+              <div className="flex items-center mb-4">
+                <div className="bg-primary-100 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                  <GraduationCap className="text-primary-600" size={24} />
+                </div>
+                <h3 className="text-xl font-bold text-gray-800">Bilinçli Eğitim Semineri</h3>
+              </div>
+              <p className="text-gray-600 mb-4">
+                Eğitim kurumlarına özel farkındalık ve gelişim programı. Öğrenci motivasyonu, 
+                sınıf yönetimi ve iletişim becerileri.
+              </p>
+              <div className="flex items-center text-sm text-gray-500 mb-4">
+                <Clock className="mr-2" size={16} />
+                <span>Yarım gün veya tam gün</span>
+              </div>
+              <Link href="/seminerler" className="text-honey-600 font-semibold hover:text-honey-700">
+                Detayları Gör →
+              </Link>
+            </div>
+
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+              <div className="flex items-center mb-4">
+                <div className="bg-honey-100 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                  <Heart className="text-honey-600" size={24} />
+                </div>
+                <h3 className="text-xl font-bold text-gray-800">Sağlıklı Yaşam Semineri</h3>
+              </div>
+              <p className="text-gray-600 mb-4">
+                Otellere ve sağlık kuruluşlarına özel sağlık ve wellness programı. 
+                Beslenme, egzersiz ve stres yönetimi.
+              </p>
+              <div className="flex items-center text-sm text-gray-500 mb-4">
+                <Clock className="mr-2" size={16} />
+                <span>Yarım gün veya tam gün</span>
+              </div>
+              <Link href="/seminerler" className="text-honey-600 font-semibold hover:text-honey-700">
+                Detayları Gör →
+              </Link>
+            </div>
+          </div>
+
+          <div className="text-center">
+            <Link
+              href="/seminerler"
+              className="inline-flex items-center bg-primary-500 hover:bg-primary-600 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-colors duration-200 shadow-lg hover:shadow-xl"
+            >
+              Tüm Seminerleri İncele
+              <ArrowRight className="ml-2" size={20} />
+            </Link>
           </div>
         </div>
       </section>

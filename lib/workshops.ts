@@ -22,6 +22,250 @@ export type WorkshopDetail = {
 
 export const workshops: WorkshopDetail[] = [
   {
+    id: 23,
+    title: "Parfüm Yapım Atölyesi",
+    slug: "parfum-yapim-atolyesi",
+    image: "/parfume.jpg",
+    category: "Bilim & Sanat",
+    ageGroup: "8-16",
+    duration: "Haftada 1 gün 1 saat",
+    intro: "Çocukların yaratıcılığını geliştiren, doğal malzemelerle kendi parfümlerini yapmayı öğreten eğlenceli ve öğretici atölye.",
+    objectives: [
+      "Yaratıcılığı ve hayal gücünü geliştirmek",
+      "Doğal malzemeleri tanıma ve kullanma",
+      "Koku duyusunu geliştirmek",
+      "El becerilerini ve koordinasyonu artırmak",
+      "Kimyasal reaksiyonları öğrenmek",
+      "Kendi ürününü yaratma deneyimi"
+    ],
+    targetAudience: [
+      "8-16 yaş arası çocuklar",
+      "Yaratıcılığını geliştirmek isteyenler",
+      "Doğal ürünler yapmayı öğrenmek isteyenler",
+      "Kimyaya ilgi duyanlar"
+    ],
+    contentItems: [
+      "Doğal esansiyel yağları tanıma",
+      "Koku ailelerini öğrenme",
+      "Parfüm notaları ve yapısı",
+      "Malzeme ölçümü ve karıştırma",
+      "Kendi parfüm formülünü oluşturma",
+      "Etiket tasarımı ve ambalajlama",
+      "Kalite kontrol ve test etme",
+      "Güvenlik kuralları ve hijyen"
+    ],
+    schedule: "Haftada 1 gün 1 saat",
+    location: "Sev-ay Eğitim ve Kariyer Danışmanlık Merkezi Atölye Salonu",
+    instructor: "Alanında uzman, kimyasal güvenlik formasyonuna sahip eğitmenlerimiz çocukların yaratıcılığını geliştirir.",
+    feeInfo: "Ücret bilgisi için arayınız.",
+    contactPhone: "0545 136 21 22",
+    contactWhatsapp: "0544 470 14 55",
+    testimonials: [
+      {
+        quote: "Çocuğum kendi parfümünü yapmayı çok sevdi. Artık her gün farklı kokular deniyor.",
+        author: "Merve K."
+      },
+      {
+        quote: "Bu atölye çocuğumun yaratıcılığını çok geliştirdi. Kendi ürününü yapmak çok gurur verici.",
+        author: "Can D."
+      },
+      {
+        quote: "Parfüm yapım atölyesi çocuğumun el becerilerini ve koku duyusunu geliştirdi.",
+        author: "Zeynep L."
+      }
+    ],
+    extraNotes: [
+      "Atölye sonunda katılım sertifikası verilir.",
+      "Kendi yapılan parfüm eve götürülür.",
+      "Kontenjan sınırlıdır.",
+      "Veliler için bilgilendirme toplantıları yapılır.",
+      "Güvenlik ekipmanları sağlanır.",
+      "Doğal ve güvenli malzemeler kullanılır."
+    ],
+  },
+  {
+    id: 22,
+    title: "İçsel Ritim Piyano Atölyesi",
+    slug: "icsel-ritim-piyano-atolyesi",
+    image: "/piano.JPG",
+    category: "Müzik & Sanat",
+    ageGroup: "6-15",
+    duration: "Haftada 1 gün 1 saat",
+    intro: "Çocukların müzik yeteneklerini keşfeden, içsel ritim duygusunu geliştiren ve piyano çalma becerilerini artıran atölye.",
+    objectives: [
+      "İçsel ritim duygusunu geliştirmek",
+      "Piyano çalma becerilerini artırmak",
+      "Müzik kulağını geliştirmek",
+      "Konsantrasyon ve koordinasyonu güçlendirmek",
+      "Yaratıcı müzik yapma yeteneği kazandırmak",
+      "Müzik teorisi temellerini öğretmek"
+    ],
+    targetAudience: [
+      "6-15 yaş arası çocuklar",
+      "Müzik yeteneği geliştirmek isteyenler",
+      "Piyano öğrenmek isteyenler",
+      "Ritim duygusunu güçlendirmek isteyenler"
+    ],
+    contentItems: [
+      "Temel piyano teknikleri ve duruş",
+      "Ritim ve tempo çalışmaları",
+      "Melodi ve armoni eğitimi",
+      "Doğaçlama ve yaratıcı müzik yapma",
+      "Müzik teorisi ve nota okuma",
+      "Ensemble çalışmaları",
+      "Performans ve sahne deneyimi",
+      "Müzik tarihi ve kültürü"
+    ],
+    schedule: "Haftada 1 gün 1 saat",
+    location: "Sev-ay Eğitim ve Kariyer Danışmanlık Merkezi Atölye Salonu",
+    instructor: "Alanında uzman, müzik eğitimi formasyonuna sahip piyano eğitmenlerimiz çocukların müzik yeteneklerini geliştirir.",
+    feeInfo: "Ücret bilgisi için arayınız.",
+    contactPhone: "0545 136 21 22",
+    contactWhatsapp: "0544 470 14 55",
+    testimonials: [
+      {
+        quote: "Çocuğum piyano çalmayı çok seviyor. İçsel ritim duygusu inanılmaz gelişti.",
+        author: "Selin A."
+      },
+      {
+        quote: "Bu atölye sayesinde çocuğumun müzik kulağı çok gelişti. Artık kendi melodilerini yaratıyor.",
+        author: "Burak K."
+      },
+      {
+        quote: "Piyano atölyesi çocuğumun konsantrasyonunu ve koordinasyonunu önemli ölçüde artırdı.",
+        author: "Deniz M."
+      }
+    ],
+    extraNotes: [
+      "Atölye sonunda katılım sertifikası verilir.",
+      "Bireysel ve grup eğitimi seçenekleri mevcuttur.",
+      "Kontenjan sınırlıdır.",
+      "Veliler için bilgilendirme toplantıları yapılır.",
+      "Yıl sonu konser ve performans fırsatları sunulur."
+    ],
+  },
+  {
+    id: 21,
+    title: "Zaman Yönetimi ve Planlı Çalışma Atölyesi",
+    slug: "zaman-yonetimi-planli-calisma-atolyesi",
+    image: "/odev-yapma.jpg",
+    category: "Kişisel Gelişim",
+    ageGroup: "8-15",
+    duration: "Haftada 1 gün 1 saat",
+    intro: "Çocukların zaman yönetimi becerilerini geliştiren, planlı çalışma alışkanlığı kazandıran ve akademik başarıyı artıran atölye.",
+    objectives: [
+      "Zaman yönetimi becerilerini geliştirmek",
+      "Planlı çalışma alışkanlığı kazandırmak",
+      "Öncelik belirleme ve hedef koyma",
+      "Konsantrasyon süresini uzatmak",
+      "Ödev ve proje planlaması yapmak",
+      "Stres yönetimi ve motivasyon"
+    ],
+    targetAudience: [
+      "8-15 yaş arası öğrenciler",
+      "Zaman yönetimi becerisi geliştirmek isteyenler",
+      "Planlı çalışma alışkanlığı kazanmak isteyenler",
+      "Akademik başarıyı artırmak isteyenler"
+    ],
+    contentItems: [
+      "Zaman yönetimi teknikleri ve araçları",
+      "Günlük, haftalık ve aylık planlama",
+      "Öncelik belirleme matrisi oluşturma",
+      "Çalışma programı hazırlama",
+      "Hedef belirleme ve takip sistemi",
+      "Konsantrasyon artırma teknikleri",
+      "Ödev ve proje organizasyonu",
+      "Motivasyon ve ödül sistemleri"
+    ],
+    schedule: "Haftada 1 gün 1 saat",
+    location: "Sev-ay Eğitim ve Kariyer Danışmanlık Merkezi Atölye Salonu",
+    instructor: "Alanında uzman, pedagojik formasyona sahip eğitmenlerimiz çocukların organizasyon becerilerini geliştirir.",
+    feeInfo: "Ücret bilgisi için arayınız.",
+    contactPhone: "0545 136 21 22",
+    contactWhatsapp: "0544 470 14 55",
+    testimonials: [
+      {
+        quote: "Çocuğum artık ödevlerini planlı bir şekilde yapıyor. Zaman yönetimi çok gelişti.",
+        author: "Elif S."
+      },
+      {
+        quote: "Bu atölye sayesinde çocuğum daha organize ve disiplinli çalışmaya başladı.",
+        author: "Ahmet K."
+      },
+      {
+        quote: "Zaman yönetimi atölyesi çocuğumun akademik başarısını önemli ölçüde artırdı.",
+        author: "Zeynep M."
+      }
+    ],
+    extraNotes: [
+      "Atölye sonunda katılım sertifikası verilir.",
+      "Kişiselleştirilmiş çalışma planları hazırlanır.",
+      "Kontenjan sınırlıdır.",
+      "Veliler için bilgilendirme toplantıları yapılır.",
+      "Sürekli takip ve değerlendirme yapılır."
+    ],
+  },
+  {
+    id: 20,
+    title: "Kitap Okuma Atölyesi",
+    slug: "kitap-okuma-atolyesi",
+    image: "/kitap-okuma.jpg",
+    category: "Sanat & Gelişim",
+    ageGroup: "6-12",
+    duration: "Haftada 1 gün 1 saat",
+    intro: "Çocukların okuma sevgisini geliştiren, yaratıcı düşünme ve hayal gücünü destekleyen atölye.",
+    objectives: [
+      "Okuma alışkanlığı kazandırmak",
+      "Hayal gücünü ve yaratıcılığı geliştirmek",
+      "Kritik düşünme becerilerini artırmak",
+      "Kelime dağarcığını zenginleştirmek",
+      "Empati ve sosyal becerileri güçlendirmek",
+      "Konsantrasyon süresini uzatmak"
+    ],
+    targetAudience: [
+      "6-12 yaş arası çocuklar",
+      "Okuma sevgisi geliştirmek isteyenler",
+      "Hayal gücünü geliştirmek isteyenler",
+      "Sosyal becerilerini güçlendirmek isteyenler"
+    ],
+    contentItems: [
+      "Hikaye okuma ve anlatma etkinlikleri",
+      "Karakter analizi ve canlandırma",
+      "Kitap tartışma grupları",
+      "Yaratıcı yazma çalışmaları",
+      "Resimli kitap inceleme",
+      "Sesli okuma ve telaffuz çalışmaları",
+      "Kitap önerisi ve paylaşım",
+      "Kütüphane ziyaretleri"
+    ],
+    schedule: "Haftada 1 gün 1 saat",
+    location: "Sev-ay Eğitim ve Kariyer Danışmanlık Merkezi Atölye Salonu",
+    instructor: "Alanında uzman, pedagojik formasyona sahip eğitmenlerimiz çocukların okuma sevgisini geliştirir.",
+    feeInfo: "Ücret bilgisi için arayınız.",
+    contactPhone: "0545 136 21 22",
+    contactWhatsapp: "0544 470 14 55",
+    testimonials: [
+      {
+        quote: "Çocuğum artık her gün kitap okumayı bekliyor. Atölye sayesinde okuma sevgisi gelişti.",
+        author: "Fatma K."
+      },
+      {
+        quote: "Kitap okuma atölyesi çocuğumun hayal gücünü çok geliştirdi. Artık kendi hikayelerini yazıyor.",
+        author: "Mehmet A."
+      },
+      {
+        quote: "Çocuklar birbirleriyle kitap hakkında sohbet ediyor, bu çok güzel bir gelişim.",
+        author: "Ayşe Y."
+      }
+    ],
+    extraNotes: [
+      "Atölye sonunda katılım sertifikası verilir.",
+      "Çocukların seviyesine uygun kitaplar seçilir.",
+      "Kontenjan sınırlıdır.",
+      "Veliler için bilgilendirme toplantıları yapılır."
+    ],
+  },
+  {
     id: 10,
     title: "Yaratıcı Drama",
     slug: "yaratici-drama-atolyesi",

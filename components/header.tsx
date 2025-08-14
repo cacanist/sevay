@@ -10,9 +10,8 @@ export default function Header() {
   const navigation = [
     { name: "Ana Sayfa", href: "/" },
     { name: "Hakkımızda", href: "/hakkimizda" },
-    { name: "Atölyeler", href: "/egitimler#atolyeler" },
-    { name: "Koçluklar", href: "/egitimler#kocluklar" },
-    { name: "Seminerler", href: "/egitimler#seminerler" },
+    { name: "Atölyeler", href: "/egitimler" },
+    { name: "Seminerler", href: "/seminerler" },
     { name: "İletişim", href: "/iletisim" },
   ]
 
