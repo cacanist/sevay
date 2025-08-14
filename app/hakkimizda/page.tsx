@@ -143,7 +143,7 @@ export default function AboutPage() {
               <div className="bg-gradient-to-br from-primary-100 to-honey-100 rounded-3xl p-12 text-center shadow-lg">
                 <div className="relative mb-8">
                   <div className="w-40 h-40 rounded-full mx-auto shadow-2xl overflow-hidden">
-                    <img src="/sevtap-aydin.jpeg" alt="Sevtap Aydın" className="w-full h-full object-cover" />
+                   <img src="/sevtap-aydin.webp" alt="Sevtap Aydın" className="w-full h-full object-cover" />
                   </div>
                   <div className="absolute -top-2 -right-2 bg-honey-300 w-12 h-12 rounded-full flex items-center justify-center">
                     <Star className="text-white" size={24} />

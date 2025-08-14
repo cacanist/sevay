@@ -17,42 +17,42 @@ export default function HomePage() {
   const workshops = [
     {
       title: "Temel İngilizce Oyun Atölyesi",
-      image: "/english-learning-children.png",
+      image: "/english-learning-children.webp",
       category: "Dil Eğitimi",
     },
     {
       title: "Satranç Oyun Atölyesi",
-      image: "/classroom-chess-game.png",
+      image: "/classroom-chess-game.webp",
       category: "Strateji Oyunları",
     },
     {
       title: "Lego & Zeka Oyunları",
-      image: "/children-building-and-puzzles.png",
+      image: "/children-building-and-puzzles.webp",
       category: "Yaratıcılık",
     },
     {
       title: "Dans ve Hareket Atölyesi",
-      image: "/colorful-dance-studio.png",
+      image: "/colorful-dance-studio.webp",
       category: "Fiziksel Gelişim",
     },
     {
       title: "Robotik Kodlama Atölyesi",
-      image: "/coding-kids.png",
+      image: "/coding-kids.webp",
       category: "Teknoloji",
     },
     {
       title: "Yaratıcı Drama",
-      image: "/children-creative-drama.png",
+      image: "/children-creative-drama.webp",
       category: "Sanat",
     },
     {
       title: "Roman Yazımı Atölyesi",
-      image: "/roman-yazim-atolyesi.jpg",
+      image: "/roman-yazim-atolyesi.webp",
       category: "Yazarlık",
     },
     {
       title: "Hitabet ve Diksiyon Çalışmaları",
-      image: "/hitabet-atolyesi.jpg",
+      image: "/hitabet-atolyesi.webp",
       category: "İletişim",
     },
   ]
