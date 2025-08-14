@@ -903,7 +903,7 @@ export const workshops: WorkshopDetail[] = [
   },
   {
     id: 18,
-    title: "İçsel Ritim (Piyano) Atölyesi",
+    title: "İçsel Ritim Atölyesi",
     slug: "icsel-ritim-piyano-atolyesi",
     image: "/orff-music-class.webp",
     category: "Müzik",
