@@ -64,7 +64,7 @@ export default async function WorkshopDetailPage({ params }: Props) {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           <div className="flex items-center text-gray-700"><Clock size={18} className="mr-2" /> {workshop.schedule || workshop.duration}</div>
           <div className="flex items-center text-gray-700"><MapPin size={18} className="mr-2" /> {workshop.location}</div>
-          <div className="flex items-center text-gray-700"><User size={18} className="mr-2" /> {workshop.ageGroup || "6+"}</div>
+          <div className="flex items-center text-gray-700"><User size={18} className="mr-2" /> {workshop.ageGroup}</div>
         </div>
 
         {workshop.objectives?.length ? (

@@ -48,7 +48,7 @@ export default function HomePage() {
             <span className="text-honey-300">Danışmanlık Merkezi</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 opacity-90">
-            Çocuklarınızın gelişimi için güvenli ve kaliteli bir eğitim ortamı sunuyoruz.
+            Çocuklarınızın gelişimi için güvenli ve kaliteli bir ortam sunuyoruz.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/egitimler" className="btn-accent">
@@ -531,6 +531,25 @@ export default function HomePage() {
               </div>
               <p className="text-gray-600 text-sm">Fiziksel performans artırma ve spor psikolojisi desteği</p>
             </div>
+
+            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 border border-gray-100 hover:border-primary-200">
+              <div className="flex items-center mb-4">
+                <div className="bg-gradient-to-br from-rose-500 to-rose-600 w-12 h-12 rounded-2xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-bold text-gray-800 group-hover:text-rose-600 transition-colors duration-300">
+                  Hızlı Okuma Koçluğu
+                </h3>
+              </div>
+              <p className="text-gray-600 text-sm">Okuma hızını artırma ve anlama becerilerini geliştirme teknikleri</p>
+            </div>
           </div>
 
           <div className="mt-12 bg-honey-50 p-8 rounded-xl">
@@ -548,6 +567,161 @@ export default function HomePage() {
                 <CheckCircle className="text-green-500 mr-2 mt-1" size={16} />
                 <p>Kişisel gelişimi destekleyici atölyeler alanında uzman koçlar ve eğitmenler tarafından sunulur</p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Camps Section */}
+      <section id="kamplar" className="section-padding bg-gray-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Kamplar</h2>
+            <p className="text-gray-600 max-w-3xl mx-auto">
+              Mindfulness'tan Yaratıcı Drama ve Parfüm Tasarımına kadar özgün atölyelerle dolu unutulmaz bir kamp deneyimi!
+            </p>
+          </div>
+
+          <div className="bg-white rounded-2xl p-8 shadow-lg mb-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div>
+                <h3 className="text-2xl font-bold text-gray-800 mb-4">Yaratıcı ve Farkındalık Kamp Programları</h3>
+                <p className="text-gray-600 mb-6">
+                  Mindfulness teknikleri, yaratıcı drama ve parfüm tasarımı ile dolu, kişisel gelişim odaklı kamp programlarımız.
+                </p>
+                
+                <div className="space-y-4 mb-6">
+                  <h4 className="text-lg font-semibold text-gray-800">Amaç ve Kazanımlar:</h4>
+                  <ul className="space-y-2 text-gray-600">
+                    <li className="flex items-start">
+                      <CheckCircle className="text-green-500 mr-2 mt-1 flex-shrink-0" size={16} />
+                      <span>Mindfulness teknikleri ile stres yönetimi ve farkındalık geliştirmek</span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="text-green-500 mr-2 mt-1 flex-shrink-0" size={16} />
+                      <span>Yaratıcı drama ile ifade becerilerini ve empatiyi artırmak</span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="text-green-500 mr-2 mt-1 flex-shrink-0" size={16} />
+                      <span>Parfüm tasarımı ile yaratıcılığı ve duyusal algıyı geliştirmek</span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="text-green-500 mr-2 mt-1 flex-shrink-0" size={16} />
+                      <span>Grup içi iletişim, iş birliği ve sosyal becerileri güçlendirmek</span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="text-green-500 mr-2 mt-1 flex-shrink-0" size={16} />
+                      <span>Kişisel gelişim ve özgüven kazanımı</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="space-y-4">
+                  <h4 className="text-lg font-semibold text-gray-800">Hedef Kitle:</h4>
+                  <ul className="space-y-2 text-gray-600">
+                    <li className="flex items-start">
+                      <CheckCircle className="text-green-500 mr-2 mt-1 flex-shrink-0" size={16} />
+                      <span>Gençler ve yetişkinler</span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="text-green-500 mr-2 mt-1 flex-shrink-0" size={16} />
+                      <span>Kişisel gelişim ve yaratıcılık alanında kendini geliştirmek isteyenler</span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="text-green-500 mr-2 mt-1 flex-shrink-0" size={16} />
+                      <span>Farklı disiplinlerde deneyim kazanmak isteyen herkes</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div>
+                <div className="space-y-4 mb-6">
+                  <h4 className="text-lg font-semibold text-gray-800">Program İçeriği:</h4>
+                  <div className="space-y-3">
+                    <div className="bg-primary-50 p-4 rounded-lg">
+                      <h5 className="font-semibold text-primary-700 mb-2">Mindfulness Atölyesi</h5>
+                      <p className="text-gray-600 text-sm">Nefes ve dikkat çalışmaları, zihni sakinleştirme teknikleri</p>
+                    </div>
+                    <div className="bg-honey-50 p-4 rounded-lg">
+                      <h5 className="font-semibold text-honey-700 mb-2">Yaratıcı Drama Atölyesi</h5>
+                      <p className="text-gray-600 text-sm">Rol yapma, doğaçlama ve hikâye anlatımı</p>
+                    </div>
+                    <div className="bg-purple-50 p-4 rounded-lg">
+                      <h5 className="font-semibold text-purple-700 mb-2">Parfüm Tasarım Atölyesi</h5>
+                      <p className="text-gray-600 text-sm">Koku notalarını tanıma ve özgün parfüm yaratma</p>
+                    </div>
+                    <div className="bg-green-50 p-4 rounded-lg">
+                      <h5 className="font-semibold text-green-700 mb-2">Diğer Aktiviteler</h5>
+                      <p className="text-gray-600 text-sm">Destekleyici atölyeler ve açık hava aktiviteleri</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-r from-primary-500 to-honey-300 rounded-xl p-6 text-white">
+                  <h4 className="text-lg font-semibold mb-3">Kamp Detayları</h4>
+                  <div className="space-y-2 text-sm">
+                    <div className="flex items-center">
+                      <Clock className="mr-2" size={16} />
+                      <span>Program Süresi: 3-5 günlük kamp seçenekleri</span>
+                    </div>
+                    <div className="flex items-center">
+                      <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
+                      <span>Yer: Sev-ay Eğitim ve Kariyer Danışmanlık Merkezi kamp alanı</span>
+                    </div>
+                    <div className="flex items-center">
+                      <Users className="mr-2" size={16} />
+                      <span>Alanında uzman mindfulness eğitmenleri ve drama liderleri</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-honey-50 p-8 rounded-xl">
+            <h3 className="text-xl font-semibold text-gray-800 mb-4">Kamp Bilgileri</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="space-y-3 text-gray-600">
+                <div className="flex items-start">
+                  <CheckCircle className="text-green-500 mr-2 mt-1" size={16} />
+                  <p>Kamp sonunda katılım sertifikası verilir</p>
+                </div>
+                <div className="flex items-start">
+                  <CheckCircle className="text-green-500 mr-2 mt-1" size={16} />
+                  <p>Konaklama ve yemek seçenekleri hakkında bilgi verilir</p>
+                </div>
+                <div className="flex items-start">
+                  <CheckCircle className="text-green-500 mr-2 mt-1" size={16} />
+                  <p>Kontenjan sınırlıdır, erken kayıt önerilir</p>
+                </div>
+              </div>
+              <div className="space-y-3">
+                <div className="flex items-center text-gray-600">
+                  <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                  <span>İletişim: 0545 136 21 22</span>
+                </div>
+                <div className="flex items-center text-gray-600">
+                  <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                  </svg>
+                  <span>WhatsApp: 0544 470 14 55</span>
+                </div>
+                <div className="flex items-center text-gray-600">
+                  <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
+                  </svg>
+                  <span>Ücret: İletişim numaralarımızdan bilgi alabilirsiniz</span>
+                </div>
+              </div>
+            </div>
+            <div className="mt-6 text-center">
+              <p className="text-lg font-semibold text-primary-600 mb-2">✨ Hemen kaydolun, kendinizi keşfetmeye ve yenilenmeye başlayın!</p>
             </div>
           </div>
         </div>
@@ -587,7 +761,7 @@ export default function HomePage() {
                 <BookOpen className="text-primary-500" size={32} />
               </div>
               <h3 className="text-xl font-semibold mb-2">Eğitici Atölyeler</h3>
-              <p className="text-gray-600">17 farklı atölye programı ile çocukların yeteneklerini keşfediyoruz.</p>
+              <p className="text-gray-600">19 farklı atölye programı ile çocukların yeteneklerini keşfediyoruz.</p>
             </div>
 
             <div className="card text-center">
@@ -616,7 +790,7 @@ export default function HomePage() {
               <h3 className="text-2xl font-bold text-foreground mb-6">Hikayemiz</h3>
               <div className="space-y-4 text-muted">
                 <p>
-                  SEV-AY Eğitim ve Kariyer Danışmanlık Merkezi, çalışan ebeveynlerin yaşadığı zorlukları yakından
+                  SEV-AY Eğitim ve Kariyer Danışmanlık Merkezi, çalışan ve çoçuklarının hem akademik hem sosyal ve kişisel gelişimini desteklemek isteyen ebeveynlerin yaşadığı zorlukları yakından
                   gözlemleyen kurucumuz Sevtap Aydın tarafından, çocukların kaliteli zaman geçirebileceği ve
                   gelişimlerini destekleyecek bir merkez kurma hayaliyle gerçekleştirilmiştir.
                 </p>
@@ -673,8 +847,9 @@ export default function HomePage() {
             <h3 className="text-2xl font-bold mb-4">SEV-AY'ın Amacı</h3>
             <p className="text-lg mb-6 opacity-90">
               Okul saatleri dışında çocuklarınızın kaliteli zaman geçirmesi için SEV-AY'da gelişim içerikli oyun
-              atölyeleri. Programımız, özellikle çalışan ebeveynlere yönelik olarak çocukların akademik, sosyal,
-              fiziksel ve bilişsel gelişimlerini desteklemeyi amaçlamaktadır.
+              atölyeleri. Programımız, özellikle çoçuklarımızın ve gençlerimizin yaşamda kendi potansiyellerini 
+              keşfetmek ve bu doğrultuda akademik, sosyal, kişisel gelişimine katkı sağlamak isteyenler için özel 
+              olarak geliştirilmiş olup eğitimi destekleyen bir kurum olarak faaliyet göstermektedir. 
             </p>
             <p className="opacity-90">
               Siz iş yerlerinizde çalışırken, çocuklarınıza kaliteli ve verimli zaman sunmak bizim için büyük bir önem

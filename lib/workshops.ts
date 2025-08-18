@@ -27,65 +27,49 @@ export const workshops: WorkshopDetail[] = [
     slug: "parfum-yapim-atolyesi",
     image: "/parfume.jpg",
     category: "Bilim & Sanat",
-    ageGroup: "8-16",
+
     duration: "Haftada 1 gün 1 saat",
-    intro: "Çocukların yaratıcılığını geliştiren, doğal malzemelerle kendi parfümlerini yapmayı öğreten eğlenceli ve öğretici atölye.",
+    intro: "Kendi karakterinizi yansıtan, kişisel bir parfüm yaratmanızı sağlamak",
     objectives: [
-      "Yaratıcılığı ve hayal gücünü geliştirmek",
-      "Doğal malzemeleri tanıma ve kullanma",
-      "Koku duyusunu geliştirmek",
-      "El becerilerini ve koordinasyonu artırmak",
-      "Kimyasal reaksiyonları öğrenmek",
+      "Koku duyusunu ve yaratıcılığı geliştirmek",
+      "Farklı esanslar ve notalar hakkında bilgi vermek",
+      "Katılımcılara parfüm yapımının temellerini öğretmek",
       "Kendi ürününü yaratma deneyimi"
     ],
     targetAudience: [
-      "8-16 yaş arası çocuklar",
-      "Yaratıcılığını geliştirmek isteyenler",
-      "Doğal ürünler yapmayı öğrenmek isteyenler",
-      "Kimyaya ilgi duyanlar"
+      "Parfüm meraklıları",
+      "Yeni bir hobi veya deneyim arayanlar",
+      "Etkinliklere, atölye çalışmalarına katılmaktan hoşlananlar",
+      "Kendi imza kokusunu oluşturmak isteyen kadınlar ve erkekler"
     ],
     contentItems: [
-      "Doğal esansiyel yağları tanıma",
-      "Koku ailelerini öğrenme",
-      "Parfüm notaları ve yapısı",
-      "Malzeme ölçümü ve karıştırma",
-      "Kendi parfüm formülünü oluşturma",
-      "Etiket tasarımı ve ambalajlama",
-      "Kalite kontrol ve test etme",
-      "Güvenlik kuralları ve hijyen"
+      "Parfüm tarihine kısa bir giriş",
+      "Koku notaları (üst, orta, alt) hakkında bilgi",
+      "Esansiyel yağlar ve aromaların tanıtımı",
+      "Parfüm formülü oluşturma teknikleri",
+      " Kendi parfümünüzü tasarlama ve şişeleme çalışması",
     ],
-    schedule: "Haftada 1 gün 1 saat",
+    schedule: "Haftada 1 gün 2 saat",
     location: "Sev-ay Eğitim ve Kariyer Danışmanlık Merkezi Atölye Salonu",
-    instructor: "Alanında uzman, kimyasal güvenlik formasyonuna sahip eğitmenlerimiz çocukların yaratıcılığını geliştirir.",
+    instructor: "Koku tasarımı ve aromaterapi alanında deneyimli eğitmenlerimiz hem teorik hem de uygulamalı bilgilerle size rehberlik edecek.",
     feeInfo: "Ücret bilgisi için arayınız.",
     contactPhone: "0545 136 21 22",
     contactWhatsapp: "0544 470 14 55",
-    testimonials: [
-      {
-        quote: "Çocuğum kendi parfümünü yapmayı çok sevdi. Artık her gün farklı kokular deniyor.",
-        author: "Merve K."
-      },
-      {
-        quote: "Bu atölye çocuğumun yaratıcılığını çok geliştirdi. Kendi ürününü yapmak çok gurur verici.",
-        author: "Can D."
-      },
-      {
-        quote: "Parfüm yapım atölyesi çocuğumun el becerilerini ve koku duyusunu geliştirdi.",
-        author: "Zeynep L."
-      }
-    ],
+ 
     extraNotes: [
-      "Atölye sonunda katılım sertifikası verilir.",
-      "Kendi yapılan parfüm eve götürülür.",
-      "Kontenjan sınırlıdır.",
-      "Veliler için bilgilendirme toplantıları yapılır.",
-      "Güvenlik ekipmanları sağlanır.",
-      "Doğal ve güvenli malzemeler kullanılır."
+      "Atölye sonunda katılım sertifikası verilmektedir",
+      "Junior Parfümör Sertifikası (Parfüm Tasarımı Eğitimi Belgesi, uluslararası geçerliliği var.)",
+      "Burun Değerlendirme Raporu (kişiye özel)",
+      "Tasarımı tamamlanan kişisel parfüm şişesi",
+      "Kaan Demirdöven imzalı Referans Mektubu",
+      "1 ay boyunca 7/24 soru-cevap ve danışmanlık desteği",
+      "Atölye sonunda kendi tasarladığınız parfümü yanınızda götürebilirsiniz",
+      "Kontenjanımız sınırlıdır."
     ],
   },
   {
     id: 21,
-    title: "Zaman Yönetimi ve Planlı Çalışma Atölyesi",
+    title: "Zaman Yönetimi ve Planlı Ders Çalışma Teknikleri İçerikli Oyun Atölyesi",
     slug: "zaman-yonetimi-planli-calisma-atolyesi",
     image: "/odev-yapma.jpg",
     category: "Kişisel Gelişim",
@@ -122,20 +106,7 @@ export const workshops: WorkshopDetail[] = [
     feeInfo: "Ücret bilgisi için arayınız.",
     contactPhone: "0545 136 21 22",
     contactWhatsapp: "0544 470 14 55",
-    testimonials: [
-      {
-        quote: "Çocuğum artık ödevlerini planlı bir şekilde yapıyor. Zaman yönetimi çok gelişti.",
-        author: "Elif S."
-      },
-      {
-        quote: "Bu atölye sayesinde çocuğum daha organize ve disiplinli çalışmaya başladı.",
-        author: "Ahmet K."
-      },
-      {
-        quote: "Zaman yönetimi atölyesi çocuğumun akademik başarısını önemli ölçüde artırdı.",
-        author: "Zeynep M."
-      }
-    ],
+  
     extraNotes: [
       "Atölye sonunda katılım sertifikası verilir.",
       "Kişiselleştirilmiş çalışma planları hazırlanır.",
@@ -163,7 +134,7 @@ export const workshops: WorkshopDetail[] = [
     targetAudience: [
       "6 yaş ve üzeri çocuklar",
       "Gençler ve yetişkinler",
-      "Kendini ifade etmek veya sosyal iletişimde güçlenmek isteyen herkes",
+      "Kendini ifade etme becerilerini ve sosyal iletişimini güçlendirmek isteyen herkes",
     ],
     contentItems: [
       "Isınma ve tanışma oyunları",
@@ -188,7 +159,7 @@ export const workshops: WorkshopDetail[] = [
       { quote: "Yaratıcılığımı yeniden keşfettim. Eğlenceli ve öğretici bir deneyimdi.", author: "Ali C." },
     ],
     extraNotes: [
-      "Atölye sonunda katılım sertifikası verilir.",
+      "3 aylık atölyeye katılım sağlanması halinde katılım belgesi verilir.",
       "Rahat kıyafet ve spor ayakkabı ile gelmeniz tavsiye edilir.",
       "Kontenjan sınırlıdır.",
     ],
@@ -212,7 +183,7 @@ export const workshops: WorkshopDetail[] = [
     targetAudience: [
       "6 yaş ve üzeri çocuklar",
       "Gençler ve yetişkinler",
-      "Günlük yaşamda daha akıcı konuşmak ve sahnede kendini rahat ifade etmek isteyenler",
+      "Günlük yaşamda temel İngilizce terimleri hakim olmak ve kendini daha rahat ifade etmek isteyenler",
     ],
     contentItems: [
       "İngilizce tanışma ve ısınma oyunları",
@@ -228,11 +199,13 @@ export const workshops: WorkshopDetail[] = [
     feeInfo: "Ücret bilgisi için arayınız.",
     contactPhone: "0545 136 21 22",
     contactWhatsapp: "0544 470 14 55",
+
     extraNotes: [
-      "Atölye sonunda katılım sertifikası verilir.",
+      "3 aylık atölyeye katılım sağlanması halinde katılım belgesi verilir.",
       "Rahat kıyafet ile gelinmesi tavsiye edilir.",
       "Etkinlik malzemeleri eğitmen tavsiyesi ile temin edilir.",
       "Kontenjan sınırlıdır.",
+      "✨ Hemen kayıt olun, İngilizce konuşma sahnesi sizin olsun!"
     ],
   },
   {
@@ -266,10 +239,12 @@ export const workshops: WorkshopDetail[] = [
     feeInfo: "Ücret bilgisi için arayınız.",
     contactPhone: "0545 136 21 22",
     contactWhatsapp: "0544 470 14 55",
+  
     extraNotes: [
       "Atölye sonunda katılım sertifikası verilir.",
       "Rahat kıyafet ile gelmeniz tavsiye edilir.",
       "Kontenjan sınırlıdır.",
+      "✨ Hemen kayıt olun, ilk hamleyi siz yapın!"
     ],
   },
   {
@@ -303,10 +278,12 @@ export const workshops: WorkshopDetail[] = [
     feeInfo: "Ücret bilgisi için arayınız.",
     contactPhone: "0545 136 21 22",
     contactWhatsapp: "0544 470 14 55",
+
     extraNotes: [
       "Atölye sonunda katılım sertifikası verilir.",
       "Rahat kıyafet ile gelmeniz tavsiye edilir.",
       "Kontenjan sınırlıdır.",
+      "✨ Hemen kayıt olun, yaratıcılığınızı ortaya çıkarın!"
     ],
   },
   {
@@ -344,6 +321,7 @@ export const workshops: WorkshopDetail[] = [
       "Atölye sonunda katılım sertifikası verilir.",
       "Rahat kıyafet ile gelmeniz tavsiye edilir.",
       "Kontenjan sınırlıdır.",
+      "✨ Hemen kayıt olun, ritim sizinle olsun!"
     ],
   },
   {
@@ -381,6 +359,7 @@ export const workshops: WorkshopDetail[] = [
       "Atölye sonunda katılım sertifikası verilir.",
       "Rahat kıyafet ile gelmeniz tavsiye edilir.",
       "Kontenjan sınırlıdır.",
+      "✨ Hemen kayıt olun, enerjini harekete dönüştür!"
     ],
   },
 
@@ -417,15 +396,16 @@ export const workshops: WorkshopDetail[] = [
     contactWhatsapp: "0544 470 14 55",
     extraNotes: [
       "Atölye sonunda katılım sertifikası verilir.",
-      "Malzemeler eğitmen tavsiyesiyle katılımcı veya atölye tarafından temin edilir.",
+      "Boya, fırça ve gerekli malzemeler eğitmen tavsiyesi üzerine katılımcı ya da atölye yöneticileri tarafından temin edilecektir.",
       "Kontenjan sınırlıdır.",
+      "✨ Hemen kayıt olun, fırçanız hayal gücünüzü anlatsın!"
     ],
   },
   {
     id: 9,
     title: "Sokak Oyunları Atölyesi",
     slug: "sokak-oyunlari-atolyesi",
-    image: "/traditional-street-games.webp",
+    image: "/sokak.png",
     category: "Sosyal Gelişim",
     ageGroup: "6+",
     duration: "Haftada 1 gün 1 saat",
@@ -436,6 +416,7 @@ export const workshops: WorkshopDetail[] = [
       "Takım ruhu ve sosyal iletişimi pekiştirmek",
       "Stratejik düşünme ve hızlı karar verme",
       "Özgüveni artırmak",
+      "Çocukların sanal ortamdan, gerçek aktivitelerde bulunmalarını sağlamak"
     ],
     targetAudience: ["6+ çocuklar", "Gençler ve geleneksel oyunları seven herkes"],
     contentItems: [
@@ -453,9 +434,9 @@ export const workshops: WorkshopDetail[] = [
     contactPhone: "0545 136 21 22",
     contactWhatsapp: "0544 470 14 55",
     extraNotes: [
-      "Atölye sonunda katılım sertifikası verilir.",
-      "Rahat kıyafet ve spor ayakkabı tavsiye edilir.",
+      "Rahat kıyafet ve spor ayakkabı ile gelmeniz tavsiye edilir.",
       "Kontenjan sınırlıdır.",
+      "✨ Hemen kayıt olun, sokak oyunlarının enerjisini yaşayın!"
     ],
   },
 
@@ -465,7 +446,7 @@ export const workshops: WorkshopDetail[] = [
     slug: "robotik-kodlama-oyun-atolyesi",
     image: "/coding-kids.webp",
     category: "Teknoloji",
-    ageGroup: "8+",
+    ageGroup: "7+",
     duration: "Haftada 1 gün 1 saat",
     intro: "Teknolojiyle tanış, kodla, keşfet ve üret!",
     objectives: [
@@ -475,7 +456,7 @@ export const workshops: WorkshopDetail[] = [
       "Yaratıcılık ve takım çalışmasını pekiştirmek",
       "Teknoloji okuryazarlığını artırmak",
     ],
-    targetAudience: ["6+ çocuklar", "Gençler", "Teknolojiye ilgi duyan herkes"],
+    targetAudience: ["7+ yaş ve üzeri çocuklar", "Gençler", "Teknolojiye ilgi duyan herkes"],
     contentItems: [
       "Temel kodlama oyunları",
       "Robotik setlerle programlama",
@@ -492,9 +473,10 @@ export const workshops: WorkshopDetail[] = [
     contactWhatsapp: "0544 470 14 55",
     extraNotes: [
       "Atölye sonunda katılım sertifikası verilir.",
-      "Robotik setler atölye tarafından sağlanır.",
-      "Gerekli malzemeler tavsiye üzerine temin edilir.",
+      "Robotik setler atölye tarafından sağlanmaktadır.",
+      "Gerekli malzemeler eğitmen tavsiyesi üzerine katılımcı yada atölye tarafından temin edilecektir.",
       "Kontenjan sınırlıdır.",
+      "✨ Hemen kayıt olun, teknolojiyle yaratıcılığınızı buluşturun!"
     ],
   },
   {
@@ -513,7 +495,7 @@ export const workshops: WorkshopDetail[] = [
       "Grup uyumu, dinleme ve iş birliği becerilerini güçlendirmek",
       "Sosyal iletişim ve motor becerileri desteklemek",
     ],
-    targetAudience: ["6+ çocuklar", "Gençler ve yetişkinler", "Müziğe ilgi duyan herkes"],
+    targetAudience: ["6+ çocuklar",  "Müziğe ilgi duyan herkes"],
     contentItems: [
       "Orff çalgıları tanıtımı",
       "Temel ritim ve melodi çalışmaları",
@@ -531,8 +513,9 @@ export const workshops: WorkshopDetail[] = [
     extraNotes: [
       "Atölye sonunda katılım sertifikası verilir.",
       "Müzik aletleri atölye tarafından sağlanır.",
-      "Rahat kıyafet tavsiye edilir.",
+      "Rahat kıyafet ile gelmeniz tavsiye edilir.",
       "Kontenjan sınırlıdır.",
+      "✨ Hemen kayıt olun, müziğin büyülü dünyasına adım atın!"
     ],
   },
   {
@@ -541,7 +524,7 @@ export const workshops: WorkshopDetail[] = [
     slug: "temel-almanca-oyun-atolyesi",
     image: "/german-learning-kids.webp",
     category: "Dil Eğitimi",
-    ageGroup: "7+",
+    ageGroup: "6+",
     duration: "Haftada 1 gün 1 saat",
     intro: "Almancayı eğlenerek öğren, kelimeleri oyunla keşfet!",
     objectives: [
@@ -551,10 +534,9 @@ export const workshops: WorkshopDetail[] = [
       "Yaratıcılık ve grup çalışması becerilerini artırmak",
       "Eğlenerek öğrenme motivasyonunu güçlendirmek",
     ],
-    targetAudience: ["6+ çocuklar", "Gençler ve yeni başlayanlar", "Oyunla pratik yapmak isteyen herkes"],
+    targetAudience: ["6 yaş ve üzeri çocuklar", "Oyunla pratik yapmak isteyen herkes"],
     contentItems: [
       "Almanca tanışma ve ısınma oyunları",
-      "Kelimeler ve eşleştirme etkinlikleri",
       "Basit rol oynama ve diyalog",
       "Grup oyunları ile iletişim pratiği",
       "Almanca şarkılar ve tekerlemeler",
@@ -568,9 +550,10 @@ export const workshops: WorkshopDetail[] = [
     contactWhatsapp: "0544 470 14 55",
     extraNotes: [
       "Atölye sonunda katılım sertifikası verilir.",
-      "Rahat kıyafet tavsiye edilir.",
-      "Etkinlik malzemeleri eğitmen tavsiyesi ile temin edilir.",
+      "Rahat kıyafet ile gelinmesi tavsiye edilir.",
+      "Etkinlik malzemeleri eğitmen tavsiyesi ile temin edilecektir.",
       "Kontenjan sınırlıdır.",
+      "✨ Hemen kayıt olun, Almancayı oyunla keşfedin!"
     ],
   },
   // Ek programlar (listede görünmeyebilir ama detay sayfaları için hazır)
@@ -578,7 +561,7 @@ export const workshops: WorkshopDetail[] = [
     id: 15,
     title: "Hitabet ve Diksiyon Çalışmaları Atölyesi",
     slug: "hitabet-diksiyon-atolyesi",
-    image: "/hitabet-atolyesi.webp",
+    image: "/diksiyon.png",
     category: "İletişim",
     ageGroup: "12+",
     duration: "Haftada 1 gün 1.5 saat",
@@ -605,13 +588,18 @@ export const workshops: WorkshopDetail[] = [
     feeInfo: "Ücret bilgisi için arayınız.",
     contactPhone: "0545 136 21 22",
     contactWhatsapp: "0544 470 14 55",
-    extraNotes: ["Atölye sonunda katılım sertifikası verilir.", "Kontenjan sınırlıdır."],
+    extraNotes: [
+      "Atölye sonunda katılım sertifikası verilir.",
+      "Gerekli malzemeler eğitmen tavsiyesi üzerine katılımcı yada atölye tarafından temin edilecektir.",
+      "Kontenjan sınırlıdır.",
+      "✨ Hemen kayıt olun, sesinizin gücünü keşfedin!"
+    ],
   },
   {
     id: 16,
     title: "Roman Yazımı Atölyesi",
     slug: "roman-yazimi-atolyesi",
-    image: "/roman-yazim-atolyesi.webp",
+    image: "/roman-yazimi.png",
     category: "Yazarlık",
     ageGroup: "16+",
     duration: "Haftada 1 gün 2 saat",
@@ -638,13 +626,18 @@ export const workshops: WorkshopDetail[] = [
     feeInfo: "Ücret bilgisi için arayınız.",
     contactPhone: "0545 136 21 22",
     contactWhatsapp: "0544 470 14 55",
-    extraNotes: ["Atölye sonunda katılım sertifikası verilir.", "Yazma materyalleri katılımcı tarafından temin edilir."],
+    extraNotes: [
+      "Atölye sonunda katılım sertifikası verilir.",
+      "Yazma materyalleri katılımcı tarafından temin edilir.",
+      "Kontenjan sınırlıdır.",
+      "✨ Hemen kayıt olun, kendi dünyanızı yazmaya başlayın!"
+    ],
   },
   {
     id: 17,
     title: "Senaryo Yazımı Atölyesi",
     slug: "senaryo-yazimi-atolyesi",
-    image: "/happy-children-classroom.webp",
+    image: "/senorya-yazim.png",
     category: "Yazarlık",
     ageGroup: "16+",
     duration: "Haftada 1 gün 2 saat",
@@ -670,13 +663,18 @@ export const workshops: WorkshopDetail[] = [
     feeInfo: "Ücret bilgisi için arayınız.",
     contactPhone: "0545 136 21 22",
     contactWhatsapp: "0544 470 14 55",
-    extraNotes: ["Atölye sonunda katılım sertifikası verilir.", "Yazma materyalleri katılımcı tarafından temin edilir."],
+    extraNotes: [
+      "Atölye sonunda katılım sertifikası verilir.",
+      "Yazma materyalleri katılımcı tarafından temin edilir.",
+      "Kontenjan sınırlıdır.",
+      "✨ Hemen kayıt olun, kendi senaryonuzu yazmaya başlayın!"
+    ],
   },
   {
     id: 18,
     title: "İçsel Ritim Atölyesi",
     slug: "icsel-ritim-piyano-atolyesi",
-    image: "/orff-music-class.webp",
+    image: "/ritim.png",
     category: "Müzik",
     ageGroup: "6+",
     duration: "Haftada 1 gün 1 saat",
@@ -687,6 +685,7 @@ export const workshops: WorkshopDetail[] = [
       "Müzik teorisi ve nota bilgisi",
       "Duygusal ifade ve yaratıcılık",
       "Konsantrasyon, sabır ve disiplin",
+      "Bireyin müzik potansiyelini ve yeteneğini ortaya çıkarmak"
     ],
     targetAudience: ["6+ çocuklar, gençler ve yetişkinler", "Piyanoya başlayanlar veya temelini geliştirmek isteyenler"],
     contentItems: [
@@ -705,9 +704,10 @@ export const workshops: WorkshopDetail[] = [
     contactWhatsapp: "0544 470 14 55",
     extraNotes: [
       "Atölye sonunda katılım sertifikası verilir.",
-      "Piyano ve müzik aletleri atölye tarafından sağlanır.",
-      "Rahat kıyafet tavsiye edilir.",
+      "Piyano ve müzik aletleri atölye tarafından sağlanmaktadır.",
+      "Rahat kıyafet ile gelmeniz tavsiye edilir.",
       "Kontenjan sınırlıdır.",
+      "✨ Hemen kayıt olun, müziğin ritmini içinizde hissedin!"
     ],
   },
   {
@@ -744,30 +744,16 @@ export const workshops: WorkshopDetail[] = [
     feeInfo: "Ücret: İletişim numaralarımızdan bilgi alabilirsiniz.",
     contactPhone: "0545 136 21 22",
     contactWhatsapp: "0544 470 14 55",
-    testimonials: [
-      {
-        quote: "Çocuğum artık ödevlerini keyifle yapıyor. Motivasyonu çok arttı.",
-        author: "Ayşe M."
-      },
-      {
-        quote: "Bu atölye çocuğumun çalışma alışkanlığını tamamen değiştirdi.",
-        author: "Mehmet K."
-      },
-      {
-        quote: "Ödev yapma artık bir yük değil, eğlenceli bir aktivite haline geldi.",
-        author: "Fatma L."
-      }
-    ],
+   
     extraNotes: [
-      "Atölye sonunda katılım sertifikası verilir.",
       "Defter, kalem gibi temel ders araç gereçlerini yanınızda getirmeniz tavsiye edilir.",
       "Kontenjan sınırlıdır.",
-      "Hemen kayıt olun, ödevler yük değil başarıya giden bir yol olsun!"
+      "✨ Hemen kayıt yaptır, ödevler yük değil başarıya giden bir yol olsun!"
     ],
   },
   {
     id: 25,
-    title: "Kitap Okuma Alışkanlığı Atölyesi",
+    title: "Kitap Okuma Alışkanlığı Kazanma Atölyesi",
     slug: "kitap-okuma-aliskanligi-atolyesi",
     image: "/kitap-okuma.jpg",
     category: "Kişisel Gelişim",
@@ -799,25 +785,58 @@ export const workshops: WorkshopDetail[] = [
     feeInfo: "Ücret: İletişim numaralarımızdan bilgi alabilirsiniz.",
     contactPhone: "0545 136 21 22",
     contactWhatsapp: "0544 470 14 55",
-    testimonials: [
-      {
-        quote: "Çocuğum artık kitap okumayı çok seviyor. Her gün yeni bir kitap istiyor.",
-        author: "Elif S."
-      },
-      {
-        quote: "Bu atölye çocuğumun hayal gücünü çok geliştirdi.",
-        author: "Ahmet Y."
-      },
-      {
-        quote: "Kitap okuma alışkanlığı kazandırmak için mükemmel bir atölye.",
-        author: "Zeynep K."
-      }
-    ],
+   
     extraNotes: [
-      "Atölye sonunda katılım sertifikası verilir.",
+
       "Seçilecek kitaplar atölye tarafından önerilir veya katılımcı getirir.",
       "Kontenjan sınırlıdır.",
-      "Hemen kayıt olun, sayfaların büyülü dünyasına adım atın!"
+      "✨ Hemen kayıt olun, sayfaların büyülü dünyasına adım atın!"
+    ],
+  },
+  {
+    id: 26,
+    title: "Yapay Zekayı Verimli Kullanma Atölyesi",
+    slug: "yapay-zeka-verimli-kullanma-atolyesi",
+    image: "/yapayzeka.png",
+    category: "Teknoloji",
+    ageGroup: "7+",
+    duration: "Haftada 1 gün 1.5 saat",
+    intro: "Yapay zeka araçlarını etkili kullanarak günlük hayatınızı kolaylaştırın ve verimliliğinizi artırın!",
+    objectives: [
+      "Yapay zeka araçlarının temel kullanımını öğrenmek",
+      "Günlük hayatta AI araçlarını verimli şekilde kullanmak",
+      "Eğitim ve iş hayatında AI destekli çözümler geliştirmek",
+      "AI araçlarının güvenli ve etik kullanımını öğrenmek",
+      "Yaratıcılık ve problem çözme becerilerini AI ile geliştirmek",
+    ],
+    targetAudience: [
+      "7 yaş ve üzeri öğrenciler",
+      "Yapay zeka araçlarını öğrenmek isteyenler",
+      "Verimliliğini artırmak isteyen profesyoneller",
+      "Teknolojiye ilgi duyan herkes"
+    ],
+    contentItems: [
+      "Yapay zeka araçlarının tanıtımı ve kullanım alanları",
+      "ChatGPT, Claude, Gemini gibi AI asistanların kullanımı",
+      "AI destekli yazım, çeviri ve içerik oluşturma",
+      "Eğitimde AI araçlarının etkili kullanımı",
+      "AI araçlarıyla görsel tasarım ve sunum hazırlama",
+      "Güvenlik, gizlilik ve etik kullanım kuralları",
+      "Pratik projeler ve uygulamalar"
+    ],
+    schedule: "Haftada 1 gün 1 saat",
+    location: "Sev-ay Eğitim ve Kariyer Danışmanlık Merkezi Atölye Salonu",
+    instructor: "Teknoloji ve yapay zeka alanında uzman eğitmenlerimiz, güncel AI araçlarını kullanarak pratik ve etkili bir öğrenme deneyimi sunar.",
+    feeInfo: "Ücret bilgisi için arayınız.",
+    contactPhone: "0545 136 21 22",
+    contactWhatsapp: "0544 470 14 55",
+    extraNotes: [
+      "Atölye sonunda katılım sertifikası verilir.",
+      "Kişisel bilgisayarınızı getirmeniz gerekmektedir.",
+      "İnternet bağlantısı atölye tarafından sağlanmaktadır.",
+      "Gerekli yazılımlar eğitmen tarafından yönlendirilir.",
+      "Kontenjan sınırlıdır.",
+      "✨ Hemen kayıt olun, geleceğin teknolojisiyle tanışın!"
     ],
   },
 ]

@@ -284,14 +284,14 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="bg-white bg-opacity-20 rounded-2xl p-6 backdrop-blur-sm">
-                <div className="text-4xl font-bold mb-2">14</div>
+                <div className="text-4xl font-bold mb-2">21</div>
                 <div className="text-lg opacity-90">Farklı Atölye</div>
               </div>
             </div>
 
             <div className="text-center">
               <div className="bg-white bg-opacity-20 rounded-2xl p-6 backdrop-blur-sm">
-                <div className="text-4xl font-bold mb-2">14</div>
+                <div className="text-4xl font-bold mb-2">16</div>
                 <div className="text-lg opacity-90">Koçluk Alanı</div>
               </div>
             </div>

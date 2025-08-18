@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Seminerler | SEV-AY Eğitim ve Kariyer Danışmanlık Merkezi",
     description:
-      "Eğitim kurumları ve sağlık kuruluşları için özel seminer programları. Bilinçli eğitim ve sağlıklı yaşam seminerleri.",
+      "Eğitim kurumları ve küçük ve büyük çaplı tüm kurum ve kuruluşlar için özel seminer programları. Bilinçli eğitim ve sağlıklı yaşam seminerleri.",
   },
 }
 
@@ -19,7 +19,7 @@ export default function SeminerlerPage() {
       id: 1,
       title: "Bilinçli Eğitim Semineri",
       subtitle: "Eğitim kurumlarına özel farkındalık ve gelişim programı!",
-      image: "/happy-children-classroom.webp",
+      image: "/egitim.png",
       category: "Eğitim & Gelişim",
       duration: "Yarım gün veya tam gün",
       location: "Eğitim kurumlarında veya merkezimizde",
@@ -53,8 +53,8 @@ export default function SeminerlerPage() {
     {
       id: 2,
       title: "Sağlıklı Yaşam Semineri",
-      subtitle: "Otellere ve Sağlık Kuruluşlarına Özel Sağlık ve Wellness Programı",
-      image: "/children-sports-activities.webp",
+      subtitle: "Küçük ve büyük çaplı tüm kurum ve kuruluşlar için ",
+      image: "/saglik.png",
       category: "Sağlık & Wellness",
       duration: "Yarım gün veya tam gün",
       location: "Otel konferans salonları veya sağlık kuruluşlarında",
@@ -63,7 +63,11 @@ export default function SeminerlerPage() {
         "Fiziksel aktivitenin önemi ve günlük yaşama entegrasyonu",
         "Stres yönetimi ve zihinsel sağlığı destekleyen teknikler",
         "İş yerinde ergonomi ve sağlıklı yaşam uygulamaları",
-        "Kişisel bakım ve hijyen bilincini artırmak"
+        "Kişisel bakım ve hijyen bilincini artırmak",
+        "Personel uyum ve iş dayanışması durumlarını güçlendirmek",
+        "Personelin çalıştığı kurum ve kuruluşun vizyonuna bağlı hareket etmesine katkı sağlamak",
+        "Personel iş verimliliğini artırmak",
+        "Personel çalışma süresinin sürekliliğini sağlamak"
       ],
       content: [
         "Dengeli ve bilinçli beslenme",
@@ -94,7 +98,7 @@ export default function SeminerlerPage() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
-            src="/happy-children-classroom.webp"
+            src="/seminer.png"
             alt="Eğitim ve seminer ortamı"
             fill
             priority
@@ -108,8 +112,7 @@ export default function SeminerlerPage() {
         <div className="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Profesyonel Seminerler</h1>
           <p className="text-xl text-white mb-8 max-w-3xl mx-auto leading-relaxed">
-            Eğitim kurumları ve sağlık kuruluşları için özel olarak tasarlanmış, 
-            bilimsel temelli ve uygulamalı seminer programları
+          Eğitim kurumları ve küçük ve büyük çaplı tüm kurum ve kuruluşlar için özel seminer programları. Bilinçli eğitim ve sağlıklı yaşam seminerleri.
           </p>
         </div>
       </section>
