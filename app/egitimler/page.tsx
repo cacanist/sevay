@@ -7,11 +7,11 @@ import { BookOpen, Users, Award, Clock, CheckCircle } from "lucide-react"
 export const metadata: Metadata = {
   title: "Atölye Programları | SEV-AY Eğitim ve Kariyer Danışmanlık Merkezi",
   description:
-    "19 farklı atölye programı, koçluk hizmetleri ve seminerler. Çocukların gelişimini destekleyen kapsamlı atölye programları.",
+    "23 farklı atölye programı, koçluk hizmetleri ve seminerler. Çocukların gelişimini destekleyen kapsamlı atölye programları.",
   openGraph: {
     title: "Atölye Programları | SEV-AY Eğitim ve Kariyer Danışmanlık Merkezi",
     description:
-      "19 farklı atölye programı, koçluk hizmetleri ve seminerler. Çocukların gelişimini destekleyen kapsamlı atölye programları.",
+      "23 farklı atölye programı, koçluk hizmetleri ve seminerler. Çocukların gelişimini destekleyen kapsamlı atölye programları.",
   },
 }
 
@@ -88,7 +88,7 @@ export default function EducationPage() {
               <div className="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <BookOpen className="text-primary-500" size={32} />
               </div>
-              <h3 className="text-xl font-semibold mb-2">19 Farklı Atölye</h3>
+              <h3 className="text-xl font-semibold mb-2">23 Farklı Atölye</h3>
               <p className="text-gray-600">
                 Çocukların farklı yeteneklerini keşfedebileceği çeşitli atölye programları
               </p>
@@ -119,7 +119,7 @@ export default function EducationPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Atölye Programlarımız</h2>
                     <p className="text-gray-600 max-w-3xl mx-auto">
-          19 farklı atölye programı ile çocukların yeteneklerini keşfediyoruz. Her atölye, çocukların farklı
+          23 farklı atölye programı ile çocukların yeteneklerini keşfediyoruz. Her atölye, çocukların farklı
           alanlarda gelişimini desteklemek için özel olarak tasarlanmıştır.
         </p>
           </div>
