@@ -108,7 +108,7 @@ export const workshops: WorkshopDetail[] = [
     contactWhatsapp: "0544 470 14 55",
   
     extraNotes: [
-      "Atölye sonunda katılım sertifikası verilir.",
+      "Atölye sonunda katılım belgesi verilir.",
       "Kişiselleştirilmiş çalışma planları hazırlanır.",
       "Kontenjan sınırlıdır.",
       "Veliler için bilgilendirme toplantıları yapılır.",
@@ -241,7 +241,7 @@ export const workshops: WorkshopDetail[] = [
     contactWhatsapp: "0544 470 14 55",
   
     extraNotes: [
-      "Atölye sonunda katılım sertifikası verilir.",
+      "Atölye sonunda katılım belgesi verilir.",
       "Rahat kıyafet ile gelmeniz tavsiye edilir.",
       "Kontenjan sınırlıdır.",
       "✨ Hemen kayıt olun, ilk hamleyi siz yapın!"
@@ -280,7 +280,7 @@ export const workshops: WorkshopDetail[] = [
     contactWhatsapp: "0544 470 14 55",
 
     extraNotes: [
-      "Atölye sonunda katılım sertifikası verilir.",
+      "Atölye sonunda katılım belgesi verilir.",
       "Rahat kıyafet ile gelmeniz tavsiye edilir.",
       "Kontenjan sınırlıdır.",
       "✨ Hemen kayıt olun, yaratıcılığınızı ortaya çıkarın!"
@@ -318,7 +318,7 @@ export const workshops: WorkshopDetail[] = [
     contactPhone: "0545 136 21 22",
     contactWhatsapp: "0544 470 14 55",
     extraNotes: [
-      "Atölye sonunda katılım sertifikası verilir.",
+      "Atölye sonunda katılım belgesi verilir.",
       "Rahat kıyafet ile gelmeniz tavsiye edilir.",
       "Kontenjan sınırlıdır.",
       "✨ Hemen kayıt olun, ritim sizinle olsun!"
@@ -336,7 +336,6 @@ export const workshops: WorkshopDetail[] = [
     objectives: [
       "Fiziksel kondisyonu artırmak",
       "Esneklik, koordinasyon ve dengeyi geliştirmek",
-      "Kalp-damar sağlığını desteklemek",
       "Dayanıklılık ve beden kontrolünü güçlendirmek",
       "Sosyal iletişim ve eğlenceli rekabeti pekiştirmek",
     ],
@@ -356,7 +355,7 @@ export const workshops: WorkshopDetail[] = [
     contactPhone: "0545 136 21 22",
     contactWhatsapp: "0544 470 14 55",
     extraNotes: [
-      "Atölye sonunda katılım sertifikası verilir.",
+      "Atölye sonunda katılım belgesi verilir.",
       "Rahat kıyafet ile gelmeniz tavsiye edilir.",
       "Kontenjan sınırlıdır.",
       "✨ Hemen kayıt olun, enerjini harekete dönüştür!"
@@ -395,7 +394,7 @@ export const workshops: WorkshopDetail[] = [
     contactPhone: "0545 136 21 22",
     contactWhatsapp: "0544 470 14 55",
     extraNotes: [
-      "Atölye sonunda katılım sertifikası verilir.",
+        "Atölye sonunda katılım belgesi verilir.",
       "Boya, fırça ve gerekli malzemeler eğitmen tavsiyesi üzerine katılımcı ya da atölye yöneticileri tarafından temin edilecektir.",
       "Kontenjan sınırlıdır.",
       "✨ Hemen kayıt olun, fırçanız hayal gücünüzü anlatsın!"
@@ -472,7 +471,7 @@ export const workshops: WorkshopDetail[] = [
     contactPhone: "0545 136 21 22",
     contactWhatsapp: "0544 470 14 55",
     extraNotes: [
-      "Atölye sonunda katılım sertifikası verilir.",
+      "Atölye sonunda katılım belgesi verilir.",
       "Robotik setler atölye tarafından sağlanmaktadır.",
       "Gerekli malzemeler eğitmen tavsiyesi üzerine katılımcı yada atölye tarafından temin edilecektir.",
       "Kontenjan sınırlıdır.",
@@ -511,7 +510,7 @@ export const workshops: WorkshopDetail[] = [
     contactPhone: "0545 136 21 22",
     contactWhatsapp: "0544 470 14 55",
     extraNotes: [
-      "Atölye sonunda katılım sertifikası verilir.",
+      "Atölye sonunda katılım belgesi verilir.",
       "Müzik aletleri atölye tarafından sağlanır.",
       "Rahat kıyafet ile gelmeniz tavsiye edilir.",
       "Kontenjan sınırlıdır.",
@@ -549,7 +548,7 @@ export const workshops: WorkshopDetail[] = [
     contactPhone: "0545 136 21 22",
     contactWhatsapp: "0544 470 14 55",
     extraNotes: [
-      "Atölye sonunda katılım sertifikası verilir.",
+        "Atölye sonunda katılım belgesi verilir.",
       "Rahat kıyafet ile gelinmesi tavsiye edilir.",
       "Etkinlik malzemeleri eğitmen tavsiyesi ile temin edilecektir.",
       "Kontenjan sınırlıdır.",
@@ -589,7 +588,7 @@ export const workshops: WorkshopDetail[] = [
     contactPhone: "0545 136 21 22",
     contactWhatsapp: "0544 470 14 55",
     extraNotes: [
-      "Atölye sonunda katılım sertifikası verilir.",
+      "Atölye sonunda katılım belgesi verilir.",
       "Gerekli malzemeler eğitmen tavsiyesi üzerine katılımcı yada atölye tarafından temin edilecektir.",
       "Kontenjan sınırlıdır.",
       "✨ Hemen kayıt olun, sesinizin gücünü keşfedin!"
@@ -627,7 +626,7 @@ export const workshops: WorkshopDetail[] = [
     contactPhone: "0545 136 21 22",
     contactWhatsapp: "0544 470 14 55",
     extraNotes: [
-      "Atölye sonunda katılım sertifikası verilir.",
+      "Atölye sonunda katılım belgesi verilir.",
       "Yazma materyalleri katılımcı tarafından temin edilir.",
       "Kontenjan sınırlıdır.",
       "✨ Hemen kayıt olun, kendi dünyanızı yazmaya başlayın!"
@@ -664,7 +663,7 @@ export const workshops: WorkshopDetail[] = [
     contactPhone: "0545 136 21 22",
     contactWhatsapp: "0544 470 14 55",
     extraNotes: [
-      "Atölye sonunda katılım sertifikası verilir.",
+      "Atölye sonunda katılım belgesi verilir.",
       "Yazma materyalleri katılımcı tarafından temin edilir.",
       "Kontenjan sınırlıdır.",
       "✨ Hemen kayıt olun, kendi senaryonuzu yazmaya başlayın!"
@@ -703,7 +702,7 @@ export const workshops: WorkshopDetail[] = [
     contactPhone: "0545 136 21 22",
     contactWhatsapp: "0544 470 14 55",
     extraNotes: [
-      "Atölye sonunda katılım sertifikası verilir.",
+        "Atölye sonunda katılım belgesi verilir.",
       "Piyano ve müzik aletleri atölye tarafından sağlanmaktadır.",
       "Rahat kıyafet ile gelmeniz tavsiye edilir.",
       "Kontenjan sınırlıdır.",
@@ -831,7 +830,7 @@ export const workshops: WorkshopDetail[] = [
     contactPhone: "0545 136 21 22",
     contactWhatsapp: "0544 470 14 55",
     extraNotes: [
-      "Atölye sonunda katılım sertifikası verilir.",
+      "Atölye sonunda katılım belgesi verilir.",
       "Kişisel bilgisayarınızı getirmeniz gerekmektedir.",
       "İnternet bağlantısı atölye tarafından sağlanmaktadır.",
       "Gerekli yazılımlar eğitmen tarafından yönlendirilir.",
@@ -876,7 +875,7 @@ export const workshops: WorkshopDetail[] = [
     contactPhone: "0545 136 21 22",
     contactWhatsapp: "0544 470 14 55",
     extraNotes: [
-      "Atölye sonunda katılım sertifikası verilecektir.",
+      "Atölye sonunda katılım belgesi verilecektir.",
       "Katılım kontenjanı sınırlıdır.",
       "✨ Hızlı okumayı öğren, bilgiyi daha hızlı kavra ve öğrenmeyi eğlenceli hale getir!"
     ],
