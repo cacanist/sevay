@@ -72,7 +72,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="text-lg font-semibold text-gray-800 mb-1">Adres</h3>
                     <p className="text-gray-600">
-                      Bozkurt Apartmanı, Bahçelievler, Turgut Reis Cd. No: 23,
+                    Bahçelievler Mahallesi, Turgut Reis Cd., Bozkurt Apartmanı, No: 23, Muratpaşa/Antalya
                       <br />
                       07001 Muratpaşa/Antalya
                     </p>
