@@ -83,7 +83,7 @@ export default function SeminerlerPage() {
         "Sağlıklı yaşam ve wellness alanına ilgi duyan herkes"
       ],
       features: [
-        "Seminer sonunda katılım sertifikası verilir",
+        "Seminer sonunda katılım belgesi verilir",
         "İçerik ve süre kurumun ihtiyaçlarına göre uyarlanabilir",
         "İnteraktif ve motive edici seminer deneyimi",
         "Güncel bilimsel bilgiler"

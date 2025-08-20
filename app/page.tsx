@@ -761,7 +761,7 @@ export default function HomePage() {
                 <BookOpen className="text-primary-500" size={32} />
               </div>
               <h3 className="text-xl font-semibold mb-2">Eğitici Atölyeler</h3>
-              <p className="text-gray-600">19 farklı atölye programı ile çocukların yeteneklerini keşfediyoruz.</p>
+              <p className="text-gray-600">23 farklı atölye programı ile çocukların yeteneklerini keşfediyoruz.</p>
             </div>
 
             <div className="card text-center">
