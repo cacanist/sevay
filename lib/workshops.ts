@@ -336,7 +336,6 @@ export const workshops: WorkshopDetail[] = [
     objectives: [
       "Fiziksel kondisyonu artırmak",
       "Esneklik, koordinasyon ve dengeyi geliştirmek",
-
       "Dayanıklılık ve beden kontrolünü güçlendirmek",
       "Sosyal iletişim ve eğlenceli rekabeti pekiştirmek",
     ],
@@ -630,12 +629,7 @@ export const workshops: WorkshopDetail[] = [
       "Atölye sonunda katılım belgesi verilir.",
       "Yazma materyalleri katılımcı tarafından temin edilir.",
       "Kontenjan sınırlıdır.",
-      "Roman ve yazarlık tanımı üzerine grup çalışması",
-      "Yazarlık değerlendirme raporu (kişiye özel)",
-      "Katılımcılara referans mektubu (Kaan Demirdöven imzalı)",
-      "WhatsApp grubu üzerinden 7/24 eğitmenle iletişim",
-      "Şehir içinde kısa bir kültürel gezi ve kahve sohbeti",
-      "Atölye sonunda çekiliş: 1 katılımcının metni editlenerek profesyonel olarak kendisine teslim edilecektir.",
+     
       "✨ Hemen kayıt olun, kendi dünyanızı yazmaya başlayın!"
     ]
   },
@@ -673,11 +667,7 @@ export const workshops: WorkshopDetail[] = [
       "Atölye sonunda katılım belgesi verilir.",
       "Yazma materyalleri katılımcı tarafından temin edilir.",
       "Kontenjan sınırlıdır.",
-      "Her katılımcının senaryosunun sunumu ve geri bildirimi",
-      "Senaryo dosyasının dijital teslimi",
-      "Eğitmen tarafından her katılımcıya yazılı değerlendirme raporu",
-      "Katılım belgeleri ve Kaan Demirdöven imzalı referans mektubu",
-      "Atölye sonunda çekiliş: 2 kişinin senaryosu profesyonel editörden geçerek teslim edilecek",
+     
       "WhatsApp grubu üzerinden 7/24 eğitmenle iletişim",
       "✨ Hemen kayıt olun, kendi senaryonuzu yazmaya başlayın!"
     ],
