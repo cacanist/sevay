@@ -493,7 +493,7 @@ export default function HomePage() {
                   </svg>
                 </div>
                 <h3 className="text-lg font-bold text-gray-800 group-hover:text-cyan-600 transition-colors duration-300">
-                  Bilinçaltı Uzmanı ile Mindfulness
+                Bilinçli Yaşam ve Farkındalık Koçluğu
                 </h3>
               </div>
               <p className="text-gray-600 text-sm">Farkındalık artırma ve zihinsel sağlık geliştirme teknikleri</p>
@@ -510,7 +510,7 @@ export default function HomePage() {
                   Kuantum Koçluğu
                 </h3>
               </div>
-              <p className="text-gray-600 text-sm">Enerji çalışması ve bilinç dönüşümü teknikleri</p>
+              <p className="text-gray-600 text-sm">Motivasyona ihtiyaç duyduğunuz alanlarda sizi destekler ve pozitif düşünce becerilerinizi geliştirir</p>
             </div>
 
             <div className="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 border border-gray-100 hover:border-primary-200">
@@ -653,7 +653,7 @@ export default function HomePage() {
                     </div>
                     <div className="bg-green-50 p-4 rounded-lg">
                       <h5 className="font-semibold text-green-700 mb-2">Diğer Aktiviteler</h5>
-                      <p className="text-gray-600 text-sm">Destekleyici atölyeler ve açık hava aktiviteleri</p>
+                      <p className="text-gray-600 text-sm">Pozitif Yaşamı destekleyici gelişim atölyeleri ve açık hava aktiviteleri</p>
                     </div>
                   </div>
                 </div>
@@ -688,7 +688,7 @@ export default function HomePage() {
               <div className="space-y-3 text-gray-600">
                 <div className="flex items-start">
                   <CheckCircle className="text-green-500 mr-2 mt-1" size={16} />
-                  <p>Kamp sonunda katılım sertifikası verilir</p>
+                  <p>Kamp sonunda katılım belgesi verilir</p>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle className="text-green-500 mr-2 mt-1" size={16} />
@@ -862,7 +862,8 @@ export default function HomePage() {
       {/* CTA Section */}
       <section className="section-padding bg-primary-500 text-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">Çocuğunuzun Gelişimi İçin Hemen Başlayın</h2>
+          <h2 className="text-3xl font-bold mb-4">Çocuğunuzun gelişimi için 
+          hemen kayit yaptirin</h2>
           <p className="text-xl mb-8 opacity-90">
             Detaylı bilgi için ofisimizde bir kahve ve çay içmek için sizi bekliyoruz...
           </p>
