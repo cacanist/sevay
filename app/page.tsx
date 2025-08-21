@@ -863,7 +863,7 @@ export default function HomePage() {
       <section className="section-padding bg-primary-500 text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4">Çocuğunuzun gelişimi için 
-          hemen kayit yaptirin</h2>
+          hemen kayıt yaptirin</h2>
           <p className="text-xl mb-8 opacity-90">
             Detaylı bilgi için ofisimizde bir kahve ve çay içmek için sizi bekliyoruz...
           </p>
